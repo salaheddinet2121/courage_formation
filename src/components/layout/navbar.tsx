@@ -31,7 +31,7 @@ const Navbar = ({ currentPage }: { currentPage: string }) => {
 
   return (
     <header className="relative z-50 w-full px-4 pt-4 md:pt-6">
-      <div className="mx-auto max-w-5xl flex items-center justify-between gap-4 rounded-full border border-border px-5 py-3" style={{ backgroundColor: '#fafafa' }}>
+      <div className="mx-auto max-w-5xl relative flex items-center justify-between gap-4 rounded-full border border-border px-5 py-3" style={{ backgroundColor: '#fafafa' }}>
 
         {/* Mobile hamburger — left */}
         <button
@@ -42,8 +42,11 @@ const Navbar = ({ currentPage }: { currentPage: string }) => {
           <Menu className="size-5" />
         </button>
 
-        {/* Logo */}
-        <Logo wrapperClassName="flex shrink-0" className="w-28 h-7 md:w-36 md:h-9" />
+        {/* Logo — centered on mobile, left on desktop */}
+        <a href="/" className="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0 flex shrink-0 items-center">
+          <img src="/layout/logo.svg" alt="Courage Formation" class="block md:hidden h-8 w-auto" />
+          <img src="/layout/full_logo.svg" alt="Courage Formation" class="hidden md:block h-9 w-auto" />
+        </a>
 
         {/* Desktop nav — centered */}
         <nav className="hidden md:block">

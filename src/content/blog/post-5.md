@@ -1,112 +1,40 @@
 ---
-title: 'Why Size and Shape Matter'
-description: 'Understanding how speaker dimensions and design affect sound quality and performance.'
-pubDate: '2025-02-01'
-author: 'Robert Chen'
-tags: ['audio', 'technology', 'design', 'acoustics']
-coverImage: '/images/blog/blog-6.webp'
+title: 'Génération de leads pour formateurs : les 6 canaux qui fonctionnent'
+description: 'Meta Ads, SEO, LinkedIn, prescripteurs... Découvrez les canaux d'acquisition les plus efficaces pour remplir vos sessions de formation.'
+pubDate: '2025-02-20'
+author: 'Équipe Courage Formation'
+tags: ['leads', 'acquisition', 'marketing', 'formateurs']
+coverImage: '/images/blog/blog-5.webp'
 ---
 
-# Why Size and Shape Matter in Speaker Design
+# Génération de leads pour formateurs : les 6 canaux qui fonctionnent
 
-The physical dimensions and shape of a speaker play a crucial role in its sound quality and performance. Understanding these factors can help you make better choices in audio equipment and optimize your listening experience.
+Avoir un OF certifié Qualiopi ne suffit pas. Il faut des apprenants. Voici les 6 leviers d'acquisition que nous activons pour nos clients.
 
-## The Physics of Sound
+## 1. Meta Ads (Facebook & Instagram)
 
-### Basic Principles
+Idéal pour toucher les demandeurs d'emploi, salariés en reconversion et entrepreneurs. Budget minimum : 500€/mois. Résultats dès la première semaine.
 
-- Sound wave propagation
-- Frequency response
-- Resonance patterns
-- Air displacement
+## 2. Google Ads
 
-### Size Considerations
+Captez les personnes qui cherchent activement une formation. Fort taux de conversion car l'intention d'achat est déjà présente.
 
-- Bass response
-- Volume capability
-- Dispersion patterns
-- Room interaction
+## 3. SEO et contenu
 
-## Speaker Shapes
+Articles de blog, pages de service optimisées — une stratégie long terme pour générer des leads sans budget publicitaire.
 
-### Cabinet Design
+## 4. LinkedIn et personal branding
 
-- Traditional box designs
-- Horn-loaded systems
-- Curved enclosures
-- Transmission lines
+Pour le B2B et les formations professionnelles, LinkedIn est incontournable. Publiez régulièrement et développez votre autorité dans votre domaine.
 
-### Driver Configuration
+## 5. Réseau de prescripteurs
 
-- Coaxial arrangements
-- Multiple driver arrays
-- Point source designs
-- Line arrays
+Conseillers France Travail, RH, coachs — activez un réseau de personnes qui vous envoient des prospects qualifiés régulièrement.
 
-## Size Impact
+## 6. Email marketing
 
-### Low Frequency
-
-- Cabinet volume effects
-- Port tuning
-- Driver size relation
-- Room coupling
-
-### High Frequency
-
-- Dispersion patterns
-- Beaming effects
-- Crossover points
-- Time alignment
-
-## Room Interaction
-
-### Placement Options
-
-- Room boundaries
-- Listening position
-- Near-field vs. far-field
-- Room acoustics
-
-### Size Constraints
-
-- Space limitations
-- Aesthetic considerations
-- Performance trade-offs
-- Installation requirements
-
-## Design Evolution
-
-### Historical Perspective
-
-- Classic designs
-- Modern innovations
-- Material advances
-- Computer modeling
-
-### Future Trends
-
-- Compact technologies
-- Smart materials
-- Active processing
-- Adaptive systems
-
-## Practical Applications
-
-### Home Audio
-
-- Room size matching
-- Listening preferences
-- Budget considerations
-- Aesthetic integration
-
-### Professional Use
-
-- Studio monitoring
-- Live sound
-- Installation audio
-- Mobile applications
+Nurturez vos prospects avec des séquences email automatisées. Un contact qui n'est pas prêt aujourd'hui peut le devenir dans 3 mois.
 
 ## Conclusion
 
-The size and shape of speakers are not merely aesthetic choices but fundamental aspects of their acoustic design. Understanding these relationships helps in making informed decisions about audio equipment selection and setup.
+La combinaison gagnante : Meta Ads pour des résultats rapides + SEO pour la durabilité + prescripteurs pour la qualité.

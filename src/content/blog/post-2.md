@@ -1,105 +1,30 @@
 ---
-title: 'Eco-Friendly Audio Solutions'
-description: 'Discovering sustainable approaches to audio technology and environmentally conscious sound systems.'
-pubDate: '2025-02-01'
-author: 'Lisa Green'
-tags: ['audio', 'sustainability', 'eco-friendly', 'technology']
-coverImage: '/images/blog/blog-5.webp'
+title: 'CPF et EDOF : comment référencer vos formations en 2025 ?'
+description: 'Tout ce que vous devez savoir sur le CPF, l'EDOF et les étapes pour référencer vos formations sur Mon Compte Formation.'
+pubDate: '2025-04-01'
+author: 'Équipe Courage Formation'
+tags: ['CPF', 'EDOF', 'financement', 'Mon Compte Formation']
+coverImage: '/images/blog/blog-2.webp'
 ---
 
-# Eco-Friendly Audio Solutions: Sound with a Conscience
+# CPF et EDOF : comment référencer vos formations en 2025 ?
 
-As environmental awareness grows, the audio industry is responding with innovative solutions that combine high-quality sound with sustainable practices. From manufacturing to energy consumption, eco-friendly audio solutions are reshaping how we think about sound systems.
+Avec plus de 11 millions d'utilisateurs actifs, Mon Compte Formation représente une opportunité majeure pour les organismes de formation.
 
-## Sustainable Manufacturing
+## Les prérequis indispensables
 
-### Materials
+Avant de référencer vos formations, vous devez disposer d'un NDA, obtenir Qualiopi et proposer des formations certifiantes (RNCP ou RS).
 
-- Recycled components
-- Biodegradable elements
-- Sustainable packaging
-- Renewable resources
+## L'EDOF en pratique
 
-### Production Methods
+L'EDOF est la plateforme de gestion des dossiers CPF. C'est ici que vous créez vos dossiers, suivez les financements et facturez la Caisse des Dépôts.
 
-- Energy-efficient manufacturing
-- Waste reduction strategies
-- Local sourcing initiatives
-- Circular economy approach
+## Les délais à prévoir
 
-## Energy-Efficient Design
-
-### Power Management
-
-- Smart power consumption
-- Solar integration options
-- Energy-saving modes
-- Efficient amplification
-
-### Longevity Features
-
-- Modular design
-- Replaceable components
-- Firmware updates
-- Durability focus
-
-## Eco-Conscious Technologies
-
-### Smart Features
-
-- Automatic power optimization
-- Usage pattern learning
-- Environmental sensors
-- Adaptive performance
-
-### Sustainable Solutions
-
-- Solar-powered options
-- Kinetic charging
-- Low-power modes
-- Energy harvesting
-
-## Consumer Impact
-
-### Environmental Benefits
-
-- Reduced carbon footprint
-- Less electronic waste
-- Energy conservation
-- Resource preservation
-
-### Economic Advantages
-
-- Lower power bills
-- Longer product life
-- Reduced maintenance
-- Value retention
-
-## Industry Initiatives
-
-### Manufacturer Programs
-
-- Recycling services
-- Trade-in options
-- Repair programs
-- Sustainability certifications
-
-### Future Developments
-
-- Bio-based materials
-- Zero-waste packaging
-- Carbon-neutral production
-- Renewable energy integration
-
-## Making the Switch
-
-Tips for eco-conscious audio choices:
-
-- Research manufacturer practices
-- Consider energy efficiency
-- Look for sustainable materials
-- Support repair programs
+- Qualiopi : 2 à 4 mois
+- Référencement Mon Compte Formation : 2 à 6 semaines
+- Premiers dossiers CPF : immédiatement après
 
 ## Conclusion
 
-Eco-friendly audio solutions demonstrate that exceptional sound quality and environmental responsibility can go hand in hand. As technology advances, we can expect even more innovative approaches to sustainable audio systems.
+Le CPF est un levier de croissance puissant. Avec le bon accompagnement, le processus est plus simple qu'il n'y paraît.

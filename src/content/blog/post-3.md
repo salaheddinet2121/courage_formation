@@ -1,87 +1,36 @@
 ---
-title: 'Right Speaker for You'
-description: 'A comprehensive guide to choosing the perfect speaker system for your needs and space.'
-pubDate: '2025-03-02'
-author: 'Michael Chang'
-tags: ['audio', 'technology', 'speakers', 'buying guide']
-coverImage: '/images/blog/blog-2.webp'
+title: 'Créer un organisme de formation : les 5 erreurs à éviter'
+description: 'Statut juridique inadapté, NDA refusé, Qualiopi oublié... Voici les pièges classiques qui retardent le lancement de votre OF.'
+pubDate: '2025-03-20'
+author: 'Équipe Courage Formation'
+tags: ['création OF', 'NDA', 'DREETS', 'statut juridique']
+coverImage: '/images/blog/blog-3.webp'
 ---
 
-# Finding the Right Speaker for You
+# Créer un organisme de formation : les 5 erreurs à éviter
 
-Choosing the perfect speaker system can be overwhelming with the vast array of options available today. From compact Bluetooth speakers to elaborate home theater systems, each type serves a unique purpose. This guide will help you navigate the selection process and find the ideal speaker for your specific needs.
+Lancer un organisme de formation est une aventure passionnante — mais semée d'embûches administratives. Voici les 5 erreurs les plus fréquentes que nous observons chez nos clients.
 
-## Understanding Your Needs
+## Erreur 1 : Choisir le mauvais statut juridique
 
-Before diving into technical specifications, consider:
+Le statut auto-entrepreneur est souvent choisi par défaut. Mais il présente des limites de chiffre d'affaires et une image moins professionnelle. La SAS ou la SASU sont souvent plus adaptées.
 
-- Room size and acoustics
-- Primary use (music, movies, gaming)
-- Budget constraints
-- Aesthetic preferences
-- Connectivity requirements
+## Erreur 2 : Négliger le programme pédagogique
 
-## Types of Speakers
+La DREETS exige un programme pédagogique précis et structuré. Un document trop vague entraîne des demandes de compléments et retarde l'obtention du NDA.
 
-### Bookshelf Speakers
+## Erreur 3 : Oublier Qualiopi dès le départ
 
-- Compact and versatile
-- Ideal for small to medium rooms
-- Great for stereo listening
-- Perfect for desktop setups
+Trop d'OF obtiennent leur NDA sans penser à Qualiopi — et doivent tout reprendre 6 mois plus tard. Anticipez dès la création.
 
-### Floor-Standing Speakers
+## Erreur 4 : Sous-estimer les délais DREETS
 
-- Superior bass response
-- Better for larger rooms
-- Full-range sound
-- Ideal for dedicated listening rooms
+Comptez 4 à 8 semaines selon les régions. Ne promettez pas de démarrer des formations avant d'avoir votre NDA en main.
 
-### Smart Speakers
+## Erreur 5 : Agir seul
 
-- Voice control capabilities
-- Multi-room audio support
-- Streaming integration
-- Convenient for everyday use
-
-### Portable Speakers
-
-- Battery-powered
-- Weather-resistant options
-- Bluetooth connectivity
-- Perfect for outdoor use
-
-## Key Features to Consider
-
-1. **Sound Quality**
-
-   - Frequency response
-   - Power handling
-   - Sensitivity rating
-   - Impedance
-
-2. **Connectivity**
-
-   - Wireless options (Bluetooth, Wi-Fi)
-   - Physical inputs
-   - Multi-room capability
-   - Smart home integration
-
-3. **Build Quality**
-   - Materials used
-   - Durability
-   - Warranty coverage
-   - Brand reputation
-
-## Making the Right Choice
-
-Consider these factors when making your final decision:
-
-- Room acoustics and speaker placement
-- Integration with existing equipment
-- Future upgrade potential
-- Value for money
+Les démarches administratives sont chronophages. Un accompagnement spécialisé vous fait gagner du temps et évite les erreurs coûteuses.
 
 ## Conclusion
 
-The perfect speaker system is one that matches your specific needs, room characteristics, and budget. Take time to research and, if possible, listen to different options before making your decision. Remember, the best speaker isn't always the most expensive one—it's the one that brings you the most enjoyment in your space.
+Bien préparée, la création d'un OF prend 2 à 4 semaines. Mal préparée, elle peut prendre 6 mois ou plus.

@@ -1,7 +1,5 @@
 import type { CollectionEntry } from 'astro:content';
-import { ChevronLeft } from 'lucide-react';
-
-import CategoryBadge from '@/components/elements/category-badge';
+import { ArrowLeft } from 'lucide-react';
 
 const BlogPost = ({
   post,
@@ -13,41 +11,54 @@ const BlogPost = ({
   const { title, description, pubDate, coverImage } = post[0].data;
 
   return (
-    <article className="hero-padding-margin container space-y-6 md:space-y-8">
-      <div>
-        {/* Back button */}
-        <a href="/blog" className="group inline-block">
-          <CategoryBadge
-            label="Back"
-            icon={
-              <ChevronLeft className="!text-current transition-transform group-hover:-translate-x-0.5" />
-            }
-          />
-        </a>
-        <h1 className="mt-3 text-2xl md:text-4xl lg:text-5xl">{title}</h1>
-        <p className="mt-2.5 text-xl leading-8">{description}</p>
+    <article className="section-padding container max-w-3xl mx-auto space-y-8">
+
+      {/* Back */}
+      <a
+        href="/blog"
+        className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-foreground transition-colors"
+      >
+        <ArrowLeft className="size-3.5" />
+        Retour au blog
+      </a>
+
+      {/* Header */}
+      <div className="space-y-3">
+        <time className="text-xs text-muted-foreground">
+          {new Date(pubDate).toLocaleDateString('fr-FR', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+          })}
+        </time>
+        <h1 className="text-3xl font-bold md:text-4xl tracking-tight leading-tight">
+          {title}
+        </h1>
+        <p className="text-base text-muted-foreground leading-7">{description}</p>
       </div>
+
+      {/* Cover image */}
       {coverImage && (
-        <div className="relative h-[320px] overflow-hidden rounded-3xl md:h-[400px] lg:h-[600px]">
+        <div className="h-64 md:h-96 overflow-hidden rounded-2xl">
           <img
             src={coverImage}
             alt={title}
-            className="size-full object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
       )}
 
-      <time className="inline-block text-xl">
-        {new Date(pubDate).toLocaleDateString('en-US', {
-          year: 'numeric',
-          month: 'short',
-          day: 'numeric',
-        })}
-      </time>
-
-      <div className="prose-headings:font-normal prose-headings:text-3xl dark:prose-invert prose prose-xl max-w-none leading-8">
+      {/* Content */}
+      <div className="prose prose-sm max-w-none leading-7 dark:prose-invert
+        prose-headings:font-bold prose-headings:tracking-tight
+        prose-h2:text-xl prose-h3:text-lg
+        prose-a:text-accent prose-a:no-underline hover:prose-a:underline
+        prose-strong:text-foreground
+        prose-code:text-accent prose-code:bg-muted prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-xs
+      ">
         {children}
       </div>
+
     </article>
   );
 };

@@ -1,16 +1,71 @@
 ---
 import { getCollection } from 'astro:content';
-
 import BlogPosts from '@/components/sections/blog-posts';
-import { SITE_TITLE, SITE_DESCRIPTION } from '@/consts';
 import DefaultLayout from '@/layouts/DefaultLayout.astro';
+
 const posts = (await getCollection('blog')).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
 
-<DefaultLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
-  <div>
-    <BlogPosts posts={posts} client:load isBlogsPage />
+<DefaultLayout
+  title="Blog — Conseils pour organismes de formation | Courage Formation"
+  description="Guides, conseils et actualités pour lancer et développer votre organisme de formation. Qualiopi, CPF, RNCP, génération de leads..."
+>
+  <div class="section-padding container max-w-5xl mx-auto space-y-10">
+
+    <!-- Hero -->
+    <div class="space-y-4 pt-4">
+      <span class="inline-block rounded-full bg-secondary px-3 py-1 text-xs text-secondary-foreground font-medium border border-secondary">
+        Blog
+      </span>
+      <h1 class="text-3xl font-bold md:text-4xl lg:text-5xl tracking-tight">
+        Ressources & conseils
+      </h1>
+      <p class="text-muted-foreground text-base max-w-xl leading-7">
+        Guides pratiques, actualités réglementaires et stratégies pour lancer et développer votre organisme de formation.
+      </p>
+    </div>
+
+    <!-- Posts grid -->
+    <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      {posts.map((post) => (
+        <a
+          href={`/blog/${post.id}`}
+          class="group rounded-2xl overflow-hidden border border-border hover:border-accent/30 hover:shadow-sm transition-all"
+          style="background-color: #fafafa;"
+        >
+          {post.data.coverImage && (
+            <div class="h-44 overflow-hidden">
+              <img
+                src={post.data.coverImage}
+                alt={post.data.title}
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          )}
+          <div class="p-5 space-y-2.5">
+            <p class="text-xs text-muted-foreground">
+              {new Date(post.data.pubDate).toLocaleDateString('fr-FR', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+              })}
+            </p>
+            <h2 class="font-semibold text-sm leading-5 group-hover:text-accent transition-colors">
+              {post.data.title}
+            </h2>
+            <p class="text-xs text-muted-foreground leading-5 line-clamp-2">
+              {post.data.description}
+            </p>
+            <p class="flex items-center gap-1 text-xs font-medium text-accent pt-1">
+              Lire l'article
+              <svg class="size-3 group-hover:translate-x-0.5 transition-transform" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" /></svg>
+            </p>
+          </div>
+        </a>
+      ))}
+    </div>
+
   </div>
 </DefaultLayout>

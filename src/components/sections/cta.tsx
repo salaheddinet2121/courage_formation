@@ -61,18 +61,18 @@ const CTA = ({ pathname }: CTAProps) => {
         <motion.div
           variants={{ hidden: { opacity: 0, y: 16 }, visible: { opacity: 1, y: 0 } }}
           transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="flex flex-col sm:flex-row gap-3"
+          className="flex flex-col sm:flex-row gap-3 items-center justify-center"
         >
           <a
             href="/contact"
-            className="inline-flex items-center gap-2 rounded-xl bg-foreground px-7 py-3.5 text-sm font-semibold text-background hover:bg-foreground/85 transition-colors"
+            className="inline-flex items-center gap-2 rounded-full bg-foreground px-7 py-3 text-sm font-semibold text-background hover:bg-foreground/85 transition-colors"
           >
             <CalendarCheck className="size-4" />
             Réserver un diagnostic gratuit
           </a>
           <a
             href="/formations"
-            className="inline-flex items-center gap-2 rounded-xl border border-border bg-background px-7 py-3.5 text-sm font-semibold text-foreground hover:bg-muted transition-colors"
+            className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background/80 px-7 py-3 text-sm font-semibold text-foreground hover:bg-background transition-colors"
           >
             En savoir plus <ChevronRight className="size-4" />
           </a>
