@@ -1,6 +1,6 @@
 ---
 title: 'Pourquoi votre site web est votre meilleur commercial'
-description: 'Un site web professionnel génère de la crédibilité, capte des leads et est souvent exigé par les OPCO. Voici pourquoi c'est un investissement incontournable.'
+description: "Un site web professionnel génère de la crédibilité, capte des leads et est souvent exigé par les OPCO. Voici pourquoi c'est un investissement incontournable."
 pubDate: '2025-02-05'
 author: 'Équipe Courage Formation'
 tags: ['site web', 'marketing', 'SEO', 'branding']

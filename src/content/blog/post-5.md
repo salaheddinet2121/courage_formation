@@ -1,6 +1,6 @@
 ---
 title: 'Génération de leads pour formateurs : les 6 canaux qui fonctionnent'
-description: 'Meta Ads, SEO, LinkedIn, prescripteurs... Découvrez les canaux d'acquisition les plus efficaces pour remplir vos sessions de formation.'
+description: "Meta Ads, SEO, LinkedIn, prescripteurs... Découvrez les canaux d'acquisition les plus efficaces pour remplir vos sessions de formation."
 pubDate: '2025-02-20'
 author: 'Équipe Courage Formation'
 tags: ['leads', 'acquisition', 'marketing', 'formateurs']

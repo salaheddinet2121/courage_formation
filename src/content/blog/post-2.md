@@ -1,6 +1,6 @@
 ---
 title: 'CPF et EDOF : comment référencer vos formations en 2025 ?'
-description: 'Tout ce que vous devez savoir sur le CPF, l'EDOF et les étapes pour référencer vos formations sur Mon Compte Formation.'
+description: "Tout ce que vous devez savoir sur le CPF, l'EDOF et les étapes pour référencer vos formations sur Mon Compte Formation."
 pubDate: '2025-04-01'
 author: 'Équipe Courage Formation'
 tags: ['CPF', 'EDOF', 'financement', 'Mon Compte Formation']
