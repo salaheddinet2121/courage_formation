@@ -41,7 +41,7 @@ const Footer = () => {
         <div className="flex flex-col gap-10 md:flex-row md:gap-16">
           {/* Left — logo + tagline + CTA */}
           <div className="flex flex-col gap-5 md:w-56 shrink-0">
-            <Logo wrapperClassName="flex" />
+            <Logo wrapperClassName="flex" className="w-36 h-9" />
             <p className="text-sm leading-6 text-muted-foreground">
               Lancez votre organisme de formation avec un accompagnement expert, rapide et conforme.
             </p>

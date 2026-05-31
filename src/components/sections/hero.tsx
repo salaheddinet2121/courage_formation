@@ -49,7 +49,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="w-full text-center">
+    <section className="w-full text-center overflow-hidden pb-0">
       <div className="hero-padding container flex flex-col items-center justify-center gap-8 pb-0!">
         <motion.div
           variants={container}
@@ -106,42 +106,6 @@ const Hero = () => {
             ))}
           </motion.div>
 
-          {/* Hero image / mockup */}
-          <motion.div
-            variants={imageAnimation}
-            className="relative mt-4 w-full max-w-3xl"
-          >
-            <div className="relative overflow-hidden rounded-2xl border border-border bg-card shadow-2xl">
-              {/* Mockup top bar */}
-              <div className="flex items-center gap-1.5 border-b border-border bg-muted/50 px-4 py-3">
-                <span className="size-3 rounded-full bg-destructive/60" />
-                <span className="size-3 rounded-full bg-yellow-400/70" />
-                <span className="size-3 rounded-full bg-green-500/60" />
-              </div>
-              {/* Mockup content */}
-              <div className="p-6 text-left space-y-4">
-                <p className="text-xs font-mono text-muted-foreground tracking-widest uppercase">CERTIFICAT :</p>
-                <p className="text-sm font-semibold">OPF 8024-0345</p>
-                <div className="border-t border-border pt-4 space-y-3">
-                  <p className="text-xs font-mono text-muted-foreground tracking-widest uppercase">ORGANISME CERTIFIÉ</p>
-                  <div className="flex items-center gap-3">
-                    <div className="size-10 rounded-full bg-accent flex items-center justify-center text-accent-foreground text-xs font-bold">OF</div>
-                    <div>
-                      <p className="font-semibold">Nom de l&apos;organisme</p>
-                      <p className="text-xs text-muted-foreground">SHEN 125 450 259</p>
-                      <p className="text-xs text-muted-foreground">19 rue de la Formation — 75000 Paris</p>
-                    </div>
-                  </div>
-                </div>
-                <div className="border-t border-border pt-4">
-                  <p className="text-sm font-bold tracking-wide">QUALIOPI</p>
-                  <p className="text-xs text-muted-foreground">PROCESSUS CERTIFIÉ</p>
-                </div>
-              </div>
-            </div>
-            {/* Floating card behind */}
-            <div className="absolute -bottom-4 -right-4 -z-10 w-3/4 h-full rounded-2xl border border-border bg-card/60 blur-[1px]" />
-          </motion.div>
         </motion.div>
       </div>
     </section>

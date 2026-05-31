@@ -13,7 +13,7 @@ const Logo: React.FC<LogoProps> = ({
 
   return (
     <div className={cn(``, wrapperClassName)}>
-      <a href="/" className={cn(`relative block w-36 h-8`, className)}>
+      <a href="/" className={cn(`relative block`, className)}>
         <img
           src="/layout/full_logo.svg"
           alt="Courage Formation"

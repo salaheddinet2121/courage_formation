@@ -2,7 +2,7 @@
 
 import { motion } from 'motion/react';
 import { TbCircleCheckFilled } from 'react-icons/tb';
-import { ChevronRight } from 'lucide-react';
+import { CalendarCheck, ChevronRight } from 'lucide-react';
 
 interface CTAProps {
   pathname: string;
@@ -67,7 +67,8 @@ const CTA = ({ pathname }: CTAProps) => {
             href="/contact"
             className="inline-flex items-center gap-2 rounded-xl bg-foreground px-7 py-3.5 text-sm font-semibold text-background hover:bg-foreground/85 transition-colors"
           >
-            Réserver un diagnostic gratuit <ChevronRight className="size-4" />
+            <CalendarCheck className="size-4" />
+            Réserver un diagnostic gratuit
           </a>
           <a
             href="/formations"

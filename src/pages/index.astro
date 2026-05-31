@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
 import Hero from '@/components/sections/hero';
+import HeroMockup from '@/components/sections/hero-mockup';
 import TestimonialBanner from '@/components/sections/testimonial-banner';
 import Features from '@/components/sections/features';
 import PainPoints from '@/components/sections/pain-points';
@@ -20,6 +21,7 @@ const posts = (await getCollection('blog'))
 
 <DefaultLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
   <Hero slot="hero" client:load />
+  <HeroMockup client:load />
   <TestimonialBanner client:load />
   <Features client:load />
   <PainPoints client:load />
