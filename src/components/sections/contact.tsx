@@ -48,17 +48,17 @@ export default function ContactPage() {
           {/* Contact details */}
           <div className="space-y-4">
             <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">Nous joindre</p>
-            <a href="mailto:contact@courageformation.fr" className="flex items-center gap-3 text-sm hover:text-accent transition-colors">
+            <a href="mailto:Courage@courageformation.fr" className="flex items-center gap-3 text-sm hover:text-accent transition-colors">
               <div className="size-8 rounded-full border border-border flex items-center justify-center shrink-0">
                 <Mail className="size-4 text-muted-foreground" />
               </div>
-              contact@courageformation.fr
+              Courage@courageformation.fr
             </a>
-            <a href="tel:+33600000000" className="flex items-center gap-3 text-sm hover:text-accent transition-colors">
+            <a href="tel:+33615215985" className="flex items-center gap-3 text-sm hover:text-accent transition-colors">
               <div className="size-8 rounded-full border border-border flex items-center justify-center shrink-0">
                 <Phone className="size-4 text-muted-foreground" />
               </div>
-              +33 6 00 00 00 00
+              06 15 21 59 85
             </a>
           </div>
 
