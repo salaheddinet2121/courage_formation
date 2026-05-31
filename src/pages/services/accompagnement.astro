@@ -1,0 +1,232 @@
+---
+import DefaultLayout from '@/layouts/DefaultLayout.astro';
+---
+
+<DefaultLayout
+  title="Accompagnement Personnalisé pour Formateurs — Courage Formation"
+  description="Un expert dédié à vos côtés à chaque étape : coaching individuel, groupe privé, ressources exclusives et suivi de vos indicateurs. Courage Formation, votre partenaire de croissance."
+>
+  <article>
+
+    <!-- Hero band -->
+    <div style="background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%);" class="border-b border-border">
+      <div class="container max-w-5xl mx-auto section-padding">
+
+        <!-- Breadcrumb -->
+        <nav class="flex items-center gap-2 text-xs text-muted-foreground mb-8">
+          <a href="/" class="hover:text-foreground transition-colors">Accueil</a>
+          <span>/</span>
+          <a href="/services" class="hover:text-foreground transition-colors">Services</a>
+          <span>/</span>
+          <span class="text-foreground font-medium">Accompagnement</span>
+        </nav>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <span class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium border" style="background: #ffe4e6; border-color: #fda4af; color: #9f1239;">
+              <svg class="size-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+              Accompagnement personnalisé
+            </span>
+            <h1 class="text-3xl font-bold md:text-4xl lg:text-5xl leading-tight tracking-tight">
+              Un partenaire expert à vos côtés à chaque étape
+            </h1>
+            <p class="text-base leading-7 text-muted-foreground">
+              Lancer et développer un organisme de formation est un parcours semé d'embûches. Notre accompagnement vous donne accès à un expert dédié, des ressources et une communauté pour avancer plus vite.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <a href="/contact" class="inline-flex items-center rounded-full bg-foreground px-6 py-2.5 text-sm font-semibold text-background hover:bg-foreground/85 transition-colors">
+                Démarrer mon accompagnement
+              </a>
+              <a href="#inclus" class="inline-flex items-center gap-1.5 rounded-full border border-border px-6 py-2.5 text-sm font-semibold hover:bg-muted/50 transition-colors">
+                Ce qui est inclus
+                <svg class="size-3.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" /></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Stats card -->
+          <div class="rounded-3xl border border-red-100 bg-white p-8 shadow-sm space-y-6">
+            <div class="grid grid-cols-2 gap-6">
+              <div class="space-y-1">
+                <p class="text-3xl font-bold text-red-500">6–12</p>
+                <p class="text-xs text-muted-foreground">mois d'accompagnement moyen</p>
+              </div>
+              <div class="space-y-1">
+                <p class="text-3xl font-bold text-red-500">1</p>
+                <p class="text-xs text-muted-foreground">expert dédié à votre dossier</p>
+              </div>
+              <div class="space-y-1">
+                <p class="text-3xl font-bold text-red-500">0</p>
+                <p class="text-xs text-muted-foreground">engagement longue durée</p>
+              </div>
+              <div class="space-y-1">
+                <p class="text-3xl font-bold text-red-500">98%</p>
+                <p class="text-xs text-muted-foreground">de satisfaction client</p>
+              </div>
+            </div>
+            <div class="rounded-2xl bg-red-50 p-4 text-xs text-red-700 leading-5">
+              <span class="font-semibold">Premier appel offert :</span> 30 minutes pour faire le point sur votre situation, sans engagement.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container max-w-5xl mx-auto space-y-20 section-padding">
+
+      <!-- What's included -->
+      <div id="inclus" class="space-y-8">
+        <div class="space-y-2">
+          <h2 class="text-2xl font-bold md:text-3xl">Ce qui est inclus dans l'accompagnement</h2>
+          <p class="text-muted-foreground text-sm">Tout ce dont vous avez besoin pour avancer vite et éviter les erreurs coûteuses.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          {[
+            {
+              title: "Expert dédié",
+              desc: "Un consultant spécialisé en formation professionnelle assigné à votre dossier, disponible par email et en visio.",
+              icon: `<svg class="size-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" /></svg>`,
+            },
+            {
+              title: "Sessions de coaching individuelles",
+              desc: "Des sessions régulières pour faire le point sur vos avancées, débloquer vos obstacles et ajuster votre stratégie.",
+              icon: `<svg class="size-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" /></svg>`,
+            },
+            {
+              title: "Accès au groupe privé",
+              desc: "Rejoignez une communauté de formateurs accompagnés par Courage Formation : entraide, retours d'expérience, opportunités.",
+              icon: `<svg class="size-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" /></svg>`,
+            },
+            {
+              title: "Bibliothèque de ressources",
+              desc: "Templates, checklists, modèles de documents, guides pratiques — tout ce dont vous avez besoin pour avancer vite.",
+              icon: `<svg class="size-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" /></svg>`,
+            },
+            {
+              title: "Suivi des indicateurs",
+              desc: "Tableau de bord personnalisé pour suivre vos KPIs : taux de remplissage, coût par lead, CA, satisfaction apprenants.",
+              icon: `<svg class="size-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" /></svg>`,
+            },
+            {
+              title: "Veille réglementaire",
+              desc: "Nous vous alertons des évolutions légales (CPF, Qualiopi, France Compétences) qui impactent votre activité.",
+              icon: `<svg class="size-5 text-red-500" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" /></svg>`,
+            },
+          ].map((item) => (
+            <div class="rounded-2xl border border-border p-6 space-y-3 hover:border-red-200 hover:shadow-sm transition-all">
+              <div class="flex items-center gap-3">
+                <div set:html={item.icon} class="shrink-0" />
+                <h3 class="font-semibold text-sm">{item.title}</h3>
+              </div>
+              <p class="text-xs leading-6 text-muted-foreground pl-8">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Profiles -->
+      <div class="space-y-8">
+        <div class="space-y-2">
+          <h2 class="text-2xl font-bold md:text-3xl">Pour qui est cet accompagnement ?</h2>
+          <p class="text-muted-foreground text-sm">Que vous démarriez ou souhaitiez passer à l'échelle, nous avons un accompagnement adapté.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          {[
+            {
+              title: "Le formateur qui se lance",
+              desc: "Vous avez une expertise mais ne savez pas par où commencer. Nous structurons votre projet de A à Z.",
+              icon: `<svg class="size-6 text-red-400" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" /></svg>`,
+            },
+            {
+              title: "L'OF qui stagne",
+              desc: "Votre OF existe mais ne décolle pas. Nous analysons vos blocages et mettons en place des solutions concrètes.",
+              icon: `<svg class="size-6 text-red-400" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" /></svg>`,
+            },
+            {
+              title: "Le centre qui scale",
+              desc: "Vous voulez passer à l'échelle : multi-formateurs, nouvelles certifications, nouveaux marchés. Nous accélérons votre croissance.",
+              icon: `<svg class="size-6 text-red-400" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" /></svg>`,
+            },
+          ].map((item) => (
+            <div class="rounded-3xl border-2 border-border p-7 space-y-4 hover:border-red-200 hover:shadow-sm transition-all">
+              <div set:html={item.icon} />
+              <h3 class="font-bold text-sm">{item.title}</h3>
+              <p class="text-xs leading-6 text-muted-foreground">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Process -->
+      <div class="rounded-3xl border border-border overflow-hidden">
+        <div class="bg-muted/30 px-8 py-6 border-b border-border">
+          <h2 class="text-xl font-bold">Comment ça se passe concrètement ?</h2>
+        </div>
+        <div class="grid sm:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-border">
+          {[
+            { step: "1", title: "Appel découverte", desc: "30 min gratuits pour comprendre votre situation et vos objectifs." },
+            { step: "2", title: "Plan d'action", desc: "Un plan personnalisé avec des jalons clairs et mesurables." },
+            { step: "3", title: "Séances régulières", desc: "Coaching hebdomadaire ou bimensuel selon la formule choisie." },
+            { step: "4", title: "Suivi & ajustement", desc: "Tableau de bord partagé et ajustements en temps réel." },
+          ].map((item) => (
+            <div class="p-7 space-y-2">
+              <div class="size-8 rounded-full bg-red-100 flex items-center justify-center text-red-600 text-sm font-bold shrink-0">{item.step}</div>
+              <h3 class="font-semibold text-sm">{item.title}</h3>
+              <p class="text-xs text-muted-foreground leading-5">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="space-y-6">
+        <h2 class="text-2xl font-bold">Questions fréquentes</h2>
+        <div class="divide-y divide-border rounded-2xl border border-border overflow-hidden">
+          {[
+            { q: "Quelle est la durée minimale d'engagement ?", a: "Notre accompagnement est sans engagement longue durée. Nous travaillons par missions définies avec des objectifs clairs et mesurables. La plupart de nos clients restent avec nous 6 à 12 mois pour atteindre leurs objectifs." },
+            { q: "Comment se déroulent les sessions de coaching ?", a: "Les sessions se déroulent en visioconférence (Zoom ou Google Meet), une fois par semaine ou toutes les deux semaines selon la formule choisie. Un compte-rendu avec les actions à réaliser est envoyé après chaque session." },
+            { q: "Proposez-vous un accompagnement pour les audits Qualiopi de surveillance ?", a: "Oui, nous accompagnons nos clients pour leurs audits de surveillance (à 18 mois puis tous les 3 ans) : préparation du dossier, simulation d'audit, points de vigilance et recommandations post-audit." },
+          ].map((item) => (
+            <div class="px-7 py-6 space-y-2">
+              <h3 class="font-semibold text-sm">{item.q}</h3>
+              <p class="text-sm text-muted-foreground leading-7">{item.a}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Other services -->
+      <div class="space-y-5">
+        <h2 class="text-lg font-bold">Poursuivre avec nos autres services</h2>
+        <div class="grid sm:grid-cols-3 gap-4">
+          {[
+            { title: "Génération de Leads", href: "/services/generation-leads", desc: "Remplissez vos sessions avec des prospects qualifiés." },
+            { title: "Marketing & Croissance", href: "/services/marketing-croissance", desc: "Site web, branding et stratégie de contenu." },
+            { title: "Création OF", href: "/services/creation-organisme-formation", desc: "Créez votre structure en 2 à 4 semaines." },
+          ].map((s) => (
+            <a href={s.href} class="rounded-2xl border border-border p-5 space-y-2">
+              <h3 class="font-semibold text-sm">{s.title}</h3>
+              <p class="text-xs text-muted-foreground leading-5">{s.desc}</p>
+              <div class="flex items-center gap-1 text-xs text-accent font-medium">
+                En savoir plus
+                <svg class="size-3" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" /></svg>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="rounded-3xl overflow-hidden" style="background: linear-gradient(135deg, #450a0a 0%, #991b1b 50%, #b91c1c 100%);">
+        <div class="px-10 py-12 text-center space-y-5">
+          <h2 class="text-2xl font-bold text-white md:text-3xl">Commencez votre accompagnement</h2>
+          <p class="text-white/70 text-sm max-w-md mx-auto">Premier appel découverte gratuit — sans engagement.</p>
+          <a href="/contact" class="inline-flex items-center rounded-full bg-white text-foreground px-8 py-3 text-sm font-semibold hover:bg-white/90 transition-colors">
+            Réserver mon appel découverte
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </article>
+</DefaultLayout>

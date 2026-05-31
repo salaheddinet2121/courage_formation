@@ -1,0 +1,26 @@
+---
+import DefaultLayout from '@/layouts/DefaultLayout.astro';
+import Pricing from '@/components/sections/pricing';
+import FAQ from '@/components/sections/faq';
+---
+
+<DefaultLayout
+  title="Nos Formations — E-Qualiopi, Audits Blancs, Offre Garantie | Courage Formation"
+  description="Choisissez votre formation Qualiopi : E-Qualiopi à 990€, Audits Blancs à 1990€ ou l'Offre Garantie à 2490€. Certification Qualiopi avec garantie de réussite."
+>
+  <!-- Page hero (no bg image — only homepage uses it) -->
+  <div class="section-padding container text-center space-y-4 max-w-3xl mx-auto">
+    <span class="inline-block rounded-full bg-secondary px-3 py-1 text-xs text-secondary-foreground font-medium border border-secondary">
+      Nos formations
+    </span>
+    <h1 class="text-3xl font-bold md:text-4xl lg:text-5xl">
+      Obtenez Qualiopi et remplissez vos sessions de formation
+    </h1>
+    <p class="text-muted-foreground text-base max-w-xl mx-auto">
+      Trois offres progressives, toutes avec garantie. De l'e-learning autonome jusqu'à la prise en charge complète de votre audit.
+    </p>
+  </div>
+
+  <Pricing client:load />
+  <FAQ client:load />
+</DefaultLayout>

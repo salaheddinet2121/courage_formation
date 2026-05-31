@@ -1,0 +1,12 @@
+---
+import { SITE_TITLE } from '../consts';
+import ContactPage from '@/components/sections/contact';
+import DefaultLayout from '@/layouts/DefaultLayout.astro';
+---
+
+<DefaultLayout
+  title="Contact — Réservez votre diagnostic gratuit | Courage Formation"
+  description="Réservez votre diagnostic gratuit avec un expert Courage Formation. Obtenez un plan d'action clair en 15 minutes pour lancer ou développer votre organisme de formation."
+>
+  <ContactPage client:load />
+</DefaultLayout>

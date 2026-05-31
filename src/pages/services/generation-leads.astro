@@ -1,0 +1,201 @@
+---
+import DefaultLayout from '@/layouts/DefaultLayout.astro';
+---
+
+<DefaultLayout
+  title="Génération de Leads pour Organismes de Formation — Courage Formation"
+  description="Attirez des prospects qualifiés et remplissez vos sessions de formation. Publicité Meta & Google, tunnels de vente, partenariats prescripteurs — Courage Formation construit votre machine commerciale."
+>
+  <article>
+
+    <!-- Hero band -->
+    <div style="background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);" class="border-b border-border">
+      <div class="container max-w-5xl mx-auto section-padding">
+
+        <!-- Breadcrumb -->
+        <nav class="flex items-center gap-2 text-xs text-muted-foreground mb-8">
+          <a href="/" class="hover:text-foreground transition-colors">Accueil</a>
+          <span>/</span>
+          <a href="/services" class="hover:text-foreground transition-colors">Services</a>
+          <span>/</span>
+          <span class="text-foreground font-medium">Génération de Leads</span>
+        </nav>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <span class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium border" style="background: #d1fae5; border-color: #6ee7b7; color: #065f46;">
+              <svg class="size-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" /></svg>
+              Génération de leads
+            </span>
+            <h1 class="text-3xl font-bold md:text-4xl lg:text-5xl leading-tight tracking-tight">
+              Remplissez vos sessions avec des prospects qualifiés
+            </h1>
+            <p class="text-base leading-7 text-muted-foreground">
+              Avoir un OF certifié Qualiopi ne suffit pas. Il faut des apprenants. Nous construisons un système d'acquisition automatisé et rentable adapté à votre marché et votre offre.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <a href="/contact" class="inline-flex items-center rounded-full bg-foreground px-6 py-2.5 text-sm font-semibold text-background hover:bg-foreground/85 transition-colors">
+                Construire mon système d'acquisition
+              </a>
+              <a href="#methode" class="inline-flex items-center gap-1.5 rounded-full border border-border px-6 py-2.5 text-sm font-semibold hover:bg-muted/50 transition-colors">
+                Notre méthode
+                <svg class="size-3.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3" /></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Stats card -->
+          <div class="rounded-3xl border border-emerald-100 bg-white p-8 shadow-sm space-y-6">
+            <div class="grid grid-cols-2 gap-6">
+              <div class="space-y-1">
+                <p class="text-3xl font-bold text-emerald-600">J+7</p>
+                <p class="text-xs text-muted-foreground">premiers leads en payant</p>
+              </div>
+              <div class="space-y-1">
+                <p class="text-3xl font-bold text-emerald-600">500€</p>
+                <p class="text-xs text-muted-foreground">budget minimum recommandé/mois</p>
+              </div>
+              <div class="space-y-1">
+                <p class="text-3xl font-bold text-emerald-600">6+</p>
+                <p class="text-xs text-muted-foreground">canaux d'acquisition activables</p>
+              </div>
+              <div class="space-y-1">
+                <p class="text-3xl font-bold text-emerald-600">×3</p>
+                <p class="text-xs text-muted-foreground">ROI moyen de nos clients</p>
+              </div>
+            </div>
+            <div class="rounded-2xl bg-emerald-50 p-4 text-xs text-emerald-700 leading-5">
+              <span class="font-semibold">Audit offert :</span> nous analysons votre situation actuelle avant de proposer la moindre stratégie.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container max-w-5xl mx-auto space-y-20 section-padding">
+
+      <!-- Channels -->
+      <div class="space-y-8">
+        <div class="space-y-2">
+          <h2 class="text-2xl font-bold md:text-3xl">Nos leviers d'acquisition pour formateurs</h2>
+          <p class="text-muted-foreground text-sm">Une combinaison de canaux payants et organiques pour des résultats rapides et durables.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          {[
+            {
+              title: "Publicité Meta Ads",
+              desc: "Campagnes Facebook & Instagram ciblées sur votre audience idéale — entrepreneurs, demandeurs d'emploi, salariés en reconversion.",
+              icon: `<svg class="size-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 8.25h3m-3 0a.75.75 0 0 1-.75-.75V8.25A.75.75 0 0 1 10.5 7.5h3a.75.75 0 0 1 .75.75v.75a.75.75 0 0 1-.75.75m-3 0v9m3-9v9" /></svg>`,
+            },
+            {
+              title: "Google Ads & SEA",
+              desc: "Captez les personnes qui cherchent activement une formation dans votre domaine sur Google. ROI mesurable dès le premier mois.",
+              icon: `<svg class="size-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>`,
+            },
+            {
+              title: "SEO & contenu",
+              desc: "Articles de blog, pages de service optimisées, maillage interne — une stratégie organique pour générer des leads gratuitement sur la durée.",
+              icon: `<svg class="size-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5M6 7.5h3v3H6v-3Z" /></svg>`,
+            },
+            {
+              title: "Tunnels de vente",
+              desc: "Pages de capture, séquences email automatisées, webinaires de conversion — un parcours optimisé pour transformer un inconnu en apprenant.",
+              icon: `<svg class="size-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0-3.75-3.75M17.25 21 21 17.25" /></svg>`,
+            },
+            {
+              title: "Réseau de prescripteurs",
+              desc: "Identification et activation de prescripteurs (conseillers Pôle Emploi, RH, coachs) qui vous envoient régulièrement des prospects qualifiés.",
+              icon: `<svg class="size-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" /></svg>`,
+            },
+            {
+              title: "LinkedIn & personal branding",
+              desc: "Développez votre autorité sur LinkedIn pour attirer des leads entrants sans dépenser en publicité.",
+              icon: `<svg class="size-5 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" /></svg>`,
+            },
+          ].map((item) => (
+            <div class="rounded-2xl border border-border p-6 space-y-3 hover:border-emerald-200 hover:shadow-sm transition-all">
+              <div class="flex items-center gap-3">
+                <div set:html={item.icon} class="shrink-0" />
+                <h3 class="font-semibold text-sm">{item.title}</h3>
+              </div>
+              <p class="text-xs leading-6 text-muted-foreground pl-8">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Method -->
+      <div id="methode" class="space-y-8">
+        <div class="space-y-2">
+          <h2 class="text-2xl font-bold md:text-3xl">Notre méthode en 3 étapes</h2>
+          <p class="text-muted-foreground text-sm">Aucune action avant d'avoir compris votre situation et défini votre stratégie.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          {[
+            { num: "1", title: "Audit & stratégie", desc: "Analyse de votre marché, de votre concurrence et de votre offre. Définition des canaux prioritaires et du budget optimal." },
+            { num: "2", title: "Mise en place", desc: "Création des campagnes, des pages de capture et des séquences de conversion. Tout est opérationnel en 2 semaines." },
+            { num: "3", title: "Optimisation continue", desc: "Suivi hebdomadaire des performances, A/B testing et optimisation des coûts par lead pour maximiser votre ROI." },
+          ].map((item) => (
+            <div class="rounded-3xl border border-border p-7 space-y-4 hover:border-emerald-200 hover:shadow-sm transition-all">
+              <div class="size-12 rounded-2xl flex items-center justify-center text-xl font-bold text-white shrink-0" style="background: linear-gradient(135deg, #10b981, #059669);">
+                {item.num}
+              </div>
+              <h3 class="font-semibold text-sm">{item.title}</h3>
+              <p class="text-xs leading-6 text-muted-foreground">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="space-y-6">
+        <h2 class="text-2xl font-bold">Questions fréquentes sur la génération de leads</h2>
+        <div class="divide-y divide-border rounded-2xl border border-border overflow-hidden">
+          {[
+            { q: "Quel budget faut-il prévoir pour la publicité ?", a: "Nous recommandons un budget minimum de 500€/mois en publicité payante pour obtenir des résultats significatifs. Mais nous adaptons la stratégie à votre budget, en priorisant les canaux les plus rentables." },
+            { q: "En combien de temps aurai-je mes premiers leads ?", a: "Les campagnes payantes génèrent des leads dès la première semaine. Le SEO et le contenu prennent 3 à 6 mois pour produire des effets durables. Nous combinons les deux pour des résultats rapides et pérennes." },
+            { q: "Travaillez-vous avec tous les types de formations ?", a: "Oui. Que vous proposiez des formations en présentiel, distanciel, sur mesure ou en e-learning, nous adaptons la stratégie à votre offre et à votre cible (B2B, B2C, CPF, OPCO)." },
+          ].map((item) => (
+            <div class="px-7 py-6 space-y-2">
+              <h3 class="font-semibold text-sm">{item.q}</h3>
+              <p class="text-sm text-muted-foreground leading-7">{item.a}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Other services -->
+      <div class="space-y-5">
+        <h2 class="text-lg font-bold">Poursuivre avec nos autres services</h2>
+        <div class="grid sm:grid-cols-3 gap-4">
+          {[
+            { title: "Marketing & Croissance", href: "/services/marketing-croissance", desc: "Site web, branding et stratégie de contenu." },
+            { title: "Accompagnement", href: "/services/accompagnement", desc: "Un expert dédié à chaque étape de votre croissance." },
+            { title: "Accès EDOF / CPF", href: "/services/acces-edof-cpf", desc: "Débloquez les financements CPF pour vos formations." },
+          ].map((s) => (
+            <a href={s.href} class="rounded-2xl border border-border p-5 space-y-2">
+              <h3 class="font-semibold text-sm">{s.title}</h3>
+              <p class="text-xs text-muted-foreground leading-5">{s.desc}</p>
+              <div class="flex items-center gap-1 text-xs text-accent font-medium">
+                En savoir plus
+                <svg class="size-3" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" /></svg>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="rounded-3xl overflow-hidden" style="background: linear-gradient(135deg, #022c22 0%, #064e3b 50%, #065f46 100%);">
+        <div class="px-10 py-12 text-center space-y-5">
+          <h2 class="text-2xl font-bold text-white md:text-3xl">Remplissez vos prochaines sessions</h2>
+          <p class="text-white/70 text-sm max-w-md mx-auto">Audit gratuit de votre situation actuelle et plan d'acquisition personnalisé.</p>
+          <a href="/contact" class="inline-flex items-center rounded-full bg-white text-foreground px-8 py-3 text-sm font-semibold hover:bg-white/90 transition-colors">
+            Obtenir mon audit gratuit
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </article>
+</DefaultLayout>

@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content';
+
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+import Hero from '@/components/sections/hero';
+import TestimonialBanner from '@/components/sections/testimonial-banner';
+import Features from '@/components/sections/features';
+import PainPoints from '@/components/sections/pain-points';
+import ValueGrid from '@/components/sections/value-grid';
+import Pricing from '@/components/sections/pricing';
+import FAQ from '@/components/sections/faq';
+import BlogPosts from '@/components/sections/blog-posts';
+import DefaultLayout from '@/layouts/DefaultLayout.astro';
+
+const posts = (await getCollection('blog'))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+---
+
+<DefaultLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+  <Hero slot="hero" client:load />
+  <TestimonialBanner client:load />
+  <Features client:load />
+  <PainPoints client:load />
+  <ValueGrid client:load />
+  <Pricing client:load />
+  <FAQ client:load />
+  <BlogPosts posts={posts} client:load />
+</DefaultLayout>

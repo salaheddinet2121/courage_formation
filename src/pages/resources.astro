@@ -1,0 +1,95 @@
+---
+import DefaultLayout from '@/layouts/DefaultLayout.astro';
+---
+
+<DefaultLayout
+  title="Ressources Gratuites pour Formateurs — Courage Formation"
+  description="Guides, checklists et templates gratuits pour créer votre organisme de formation, obtenir Qualiopi, accéder au CPF et développer votre activité."
+>
+  <div class="section-padding container space-y-16">
+
+    <!-- Hero -->
+    <div class="text-center space-y-4 max-w-3xl mx-auto pt-8">
+      <span class="inline-block rounded-full bg-secondary px-3 py-1 text-xs text-secondary-foreground font-medium border border-secondary">
+        Ressources
+      </span>
+      <h1 class="text-3xl font-bold md:text-4xl lg:text-5xl">
+        Ressources gratuites pour formateurs
+      </h1>
+      <p class="text-muted-foreground text-base max-w-xl mx-auto">
+        Guides pratiques, checklists et templates pour créer votre OF, obtenir Qualiopi et développer votre activité — 100% gratuit.
+      </p>
+    </div>
+
+    <!-- Resources grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+
+      {[
+        {
+          tag: "Guide",
+          title: "Créer son organisme de formation",
+          desc: "Le guide complet étape par étape pour créer votre OF, choisir le bon statut juridique et obtenir votre NDA.",
+          cta: "Télécharger le guide",
+        },
+        {
+          tag: "Checklist",
+          title: "Checklist audit Qualiopi",
+          desc: "Les 7 critères Qualiopi décryptés avec une checklist pratique pour préparer votre audit sereinement.",
+          cta: "Télécharger la checklist",
+        },
+        {
+          tag: "Template",
+          title: "Modèle de convention de formation",
+          desc: "Un modèle de convention de formation professionnelle conforme aux exigences légales et Qualiopi.",
+          cta: "Télécharger le template",
+        },
+        {
+          tag: "Guide",
+          title: "Accéder au CPF en 2024",
+          desc: "Tout ce qu'il faut savoir pour référencer vos formations sur Mon Compte Formation et attirer des apprenants CPF.",
+          cta: "Télécharger le guide",
+        },
+        {
+          tag: "Template",
+          title: "Programme pédagogique type",
+          desc: "Un modèle de programme pédagogique structuré conforme aux exigences des OPCO et de France Compétences.",
+          cta: "Télécharger le template",
+        },
+        {
+          tag: "Guide",
+          title: "Générer ses premiers clients",
+          desc: "Les 5 stratégies les plus efficaces pour remplir vos premières sessions de formation sans budget publicitaire.",
+          cta: "Télécharger le guide",
+        },
+      ].map((resource) => (
+        <div class="p-6 rounded-2xl space-y-3 flex flex-col" style="background-color: #fafafa;">
+          <span class="text-xs font-semibold text-accent">{resource.tag}</span>
+          <h2 class="font-bold text-sm">{resource.title}</h2>
+          <p class="text-xs text-muted-foreground leading-6 flex-1">{resource.desc}</p>
+          <a
+            href="/contact"
+            class="inline-flex items-center text-xs font-semibold text-foreground hover:text-accent transition-colors mt-2"
+          >
+            {resource.cta} →
+          </a>
+        </div>
+      ))}
+
+    </div>
+
+    <!-- Newsletter -->
+    <div class="max-w-xl mx-auto text-center space-y-4 py-8">
+      <h2 class="text-2xl font-bold">Recevez nos ressources par email</h2>
+      <p class="text-muted-foreground text-sm">
+        Inscrivez-vous à notre newsletter et recevez chaque semaine des conseils pratiques pour développer votre activité de formateur.
+      </p>
+      <a
+        href="/contact"
+        class="inline-flex items-center rounded-full bg-foreground px-7 py-3 text-sm font-semibold text-background hover:bg-foreground/85 transition-colors"
+      >
+        S'inscrire à la newsletter
+      </a>
+    </div>
+
+  </div>
+</DefaultLayout>

@@ -1,0 +1,25 @@
+---
+import PricingSection from '@/components/sections/pricing';
+import FAQ from '@/components/sections/faq';
+import DefaultLayout from '@/layouts/DefaultLayout.astro';
+---
+
+<DefaultLayout
+  title="Tarifs — E-Qualiopi, Audits Blancs, Offre Garantie | Courage Formation"
+  description="Découvrez nos trois offres Qualiopi à partir de 990€. E-Qualiopi, Audits Blancs avec coaching, ou Offre Garantie avec prise en charge complète de votre audit."
+>
+  <div class="section-padding container text-center space-y-4 max-w-2xl mx-auto">
+    <span class="inline-block rounded-full bg-secondary px-3 py-1 text-xs text-secondary-foreground font-medium border border-secondary">
+      Tarifs
+    </span>
+    <h1 class="text-3xl font-bold md:text-4xl lg:text-5xl">
+      Des offres claires avec garantie de résultats
+    </h1>
+    <p class="text-muted-foreground text-base">
+      Choisissez l'accompagnement qui correspond à votre situation et à vos ambitions.
+    </p>
+  </div>
+
+  <PricingSection client:load />
+  <FAQ client:load />
+</DefaultLayout>
