@@ -50,13 +50,13 @@ const Navbar = ({ currentPage }: { currentPage: string }) => {
 
         {/* Desktop nav — centered */}
         <nav className="hidden md:block">
-          <ul className="flex items-center gap-7 text-sm text-muted-foreground">
+          <ul className="flex items-center gap-5 text-sm text-muted-foreground whitespace-nowrap">
             {ITEMS.map((item) => (
               <li key={item.label}>
                 <a
                   href={item.href}
                   className={cn(
-                    'transition-colors hover:text-foreground',
+                    'transition-colors hover:text-foreground whitespace-nowrap',
                     pathname === item.href && 'text-foreground font-medium',
                   )}
                 >
