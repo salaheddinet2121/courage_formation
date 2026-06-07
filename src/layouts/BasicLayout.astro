@@ -1,56 +1,66 @@
 ---
+import { ClientRouter } from 'astro:transitions';
 import BaseHead from '@/components/BaseHead.astro';
 import CategoryBadge from '@/components/elements/category-badge';
+import CTA from '@/components/sections/cta';
 import Footer from '@/components/layout/footer';
 import Navbar from '@/components/layout/navbar';
+import { NavigationProvider } from '@/components/elements/navigation-provider';
 
 const { title, description, currentPage, frontmatter } = Astro.props;
+const currentPath = Astro.url.pathname;
 
-// Format the date if it exists
 const formattedDate = frontmatter?.date
-  ? new Date(frontmatter.date).toLocaleDateString('en-US', {
+  ? new Date(frontmatter.date).toLocaleDateString('fr-FR', {
       year: 'numeric',
       month: 'long',
       day: 'numeric',
     })
   : null;
 
-// Use frontmatter title if available, otherwise fall back to title prop
 const pageTitle = frontmatter?.title || title;
+const pageDescription = frontmatter?.description || description;
 ---
 
-<html lang="en">
+<html lang="fr">
   <head>
-    <BaseHead title={title} description={description} />
+    <ClientRouter />
+    <BaseHead title={pageTitle} description={pageDescription} />
+    <meta name="view-transition" content="same-origin" />
   </head>
-  <body class={`h-screen antialiased`}>
-    <Navbar currentPage={currentPage} client:load />
-    <main>
-      <section class="container mx-auto max-w-4xl px-4 py-16 md:py-28 lg:py-32">
-        <article class="space-y-6 md:space-y-8">
-          {/* Header with date and title */}
-          <div class="flex flex-col items-center justify-center gap-4">
-            {
-              formattedDate && (
-                <a href="/" class="group">
-                  <CategoryBadge label={formattedDate} />
-                </a>
-              )
-            }
-            <h1 class="text-center text-2xl md:text-4xl lg:text-5xl">
-              {pageTitle}
-            </h1>
-          </div>
-
-          {/* Article content */}
-          <div
-            class="prose prose-2xl prose-headings:text-2xl dark:prose-invert max-w-none leading-8"
-          >
-            <slot />
-          </div>
-        </article>
-      </section>
-    </main>
-    <Footer />
+  <body class="antialiased flex flex-col min-h-screen">
+    <NavigationProvider client:load currentPath={currentPath}>
+      <div class="relative">
+        <div class="relative z-10">
+          <Navbar currentPage={currentPath} client:load />
+        </div>
+      </div>
+      <main class="flex-1" style="view-transition-name: main;">
+        <section class="container mx-auto max-w-3xl px-4 py-16 md:py-24">
+          <article class="space-y-8">
+            <div class="flex flex-col items-center justify-center gap-4 text-center">
+              {formattedDate && <CategoryBadge label={formattedDate} />}
+              <h1 class="text-3xl font-bold md:text-4xl lg:text-5xl tracking-tight leading-tight">
+                {pageTitle}
+              </h1>
+            </div>
+            <div class="prose prose-sm md:prose-base max-w-none leading-7
+              prose-headings:font-semibold prose-headings:tracking-tight
+              prose-h2:text-xl prose-h2:mt-10 prose-h2:mb-3
+              prose-h3:text-base prose-h3:mt-6 prose-h3:mb-2
+              prose-p:text-muted-foreground prose-p:leading-7
+              prose-li:text-muted-foreground prose-li:leading-7
+              prose-a:text-accent prose-a:no-underline hover:prose-a:underline
+              prose-strong:text-foreground
+              prose-table:text-sm prose-th:text-foreground prose-td:text-muted-foreground
+              prose-hr:border-border">
+              <slot />
+            </div>
+          </article>
+        </section>
+      </main>
+      <CTA pathname={currentPath} client:load />
+      <Footer />
+    </NavigationProvider>
   </body>
 </html>

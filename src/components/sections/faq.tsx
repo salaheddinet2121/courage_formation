@@ -7,6 +7,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import SectionHeader from '@/components/elements/section-header';
 
 const faqData = [
   {
@@ -38,18 +39,20 @@ const faqData = [
 export default function FAQ() {
   return (
     <section className="section-padding container">
-      <div className="mx-auto max-w-3xl space-y-6">
+      <div className="mx-auto max-w-3xl space-y-10">
         <motion.div
-          className="text-center space-y-3 mb-10"
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         >
-          <h2 className="text-3xl font-bold md:text-4xl">Questions fréquentes</h2>
-          <p className="text-muted-foreground text-base">
-            Tout ce que vous devez savoir avant de vous lancer.
-          </p>
+          <SectionHeader
+            isCenter
+            category="FAQ"
+            icon={null}
+            title="Questions fréquentes"
+            description="Tout ce que vous devez savoir avant de vous lancer."
+          />
         </motion.div>
 
         <motion.div
@@ -69,7 +72,7 @@ export default function FAQ() {
                   value={`item-${index}`}
                   className="rounded-xl border border-border px-5"
                 >
-                  <AccordionTrigger className="cursor-pointer text-sm font-semibold hover:no-underline py-4 text-left">
+                  <AccordionTrigger className="cursor-pointer text-sm font-medium hover:no-underline py-4 text-left">
                     {item.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-sm leading-7 text-muted-foreground pb-4">

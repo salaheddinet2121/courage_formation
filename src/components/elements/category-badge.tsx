@@ -1,25 +1,14 @@
 import React from 'react';
 
-import { Calendar } from 'lucide-react';
-
-import { Badge } from '@/components/ui/badge';
-
 interface CategoryBadgeProps {
   label: string;
   icon?: React.ReactNode;
 }
 
-export default function CategoryBadge({
-  label,
-  icon = <Calendar />,
-}: CategoryBadgeProps) {
+export default function CategoryBadge({ label }: CategoryBadgeProps) {
   return (
-    <Badge
-      variant="outline"
-      className="[&>svg]:text-muted-foreground flex items-center gap-3 rounded-full py-2 ps-2.5 pe-4 text-xl font-normal [&>svg]:size-5"
-    >
-      {icon}
+    <span className="inline-block w-fit rounded-full bg-secondary px-3 py-1 text-xs text-accent font-medium border border-secondary">
       {label}
-    </Badge>
+    </span>
   );
 }

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Annulation de rendez-vous — Admin</title>
+</head>
+<body style="margin:0;padding:0;background-color:#f5f5f7;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
+
+  <!-- Preheader -->
+  <div style="display:none;max-height:0;overflow:hidden;mso-hide:all;">
+    Rendez-vous annulé — {{contact.name}}
+  </div>
+
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="background-color:#f5f5f7;">
+    <tr>
+      <td align="center" style="padding:40px 16px;">
+
+        <!-- Card -->
+        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="max-width:560px;">
+
+          <!-- Logo header -->
+          <tr>
+            <td align="center" style="background-color:#ffffff;border-radius:12px 12px 0 0;padding:36px 40px 28px;border-bottom:1px solid #f0f0f2;">
+              <a href="https://courageformation.fr" style="display:inline-block;text-decoration:none;">
+                <img src="https://assets.cdn.filesafe.space/j5lxb2FGvHRwSyIWNI1K/media/6a22dca125d536ee37e489f5.png"
+                  alt="Courage Formation" width="180" height="auto"
+                  style="display:block;border:0;max-width:180px;" />
+              </a>
+            </td>
+          </tr>
+
+          <!-- Greeting -->
+          <tr>
+            <td style="background-color:#ffffff;padding:32px 40px 8px;">
+              <p style="margin:0 0 20px;font-size:15px;color:#374151;line-height:1.6;">
+                Bonjour,
+              </p>
+              <p style="margin:0;font-size:14px;color:#6b7280;line-height:1.6;">
+                Le rendez-vous avec <strong style="color:#111118;">{{contact.name}}</strong>, initialement prévu le <strong style="color:#111118;">{{appointment.start_time}}</strong>, a été <strong style="color:#ef4444;">annulé</strong>.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Section label -->
+          <tr>
+            <td style="background-color:#ffffff;padding:24px 40px 12px;">
+              <p style="margin:0;font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;color:#ef4444;">Détails du rendez-vous annulé</p>
+            </td>
+          </tr>
+
+          <!-- Details card -->
+          <tr>
+            <td style="background-color:#ffffff;padding:0 40px 32px;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"
+                style="border-radius:10px;border:1px solid #fee2e2;overflow:hidden;">
+
+                <tr>
+                  <td style="padding:14px 20px;border-bottom:1px solid #fee2e2;width:36%;vertical-align:top;background-color:#fff5f5;">
+                    <span style="font-size:11px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;color:#ef4444;">Titre</span>
+                  </td>
+                  <td style="padding:14px 20px;border-bottom:1px solid #fee2e2;vertical-align:top;background-color:#ffffff;">
+                    <span style="font-size:14px;color:#111118;font-weight:600;">{{appointment.title}}</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding:14px 20px;border-bottom:1px solid #fee2e2;vertical-align:top;background-color:#fff5f5;">
+                    <span style="font-size:11px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;color:#ef4444;">Date &amp; heure</span>
+                  </td>
+                  <td style="padding:14px 20px;border-bottom:1px solid #fee2e2;vertical-align:top;background-color:#ffffff;">
+                    <span style="font-size:14px;color:#111118;font-weight:500;text-decoration:line-through;">{{appointment.start_time}}</span>
+                    <br/>
+                    <span style="font-size:12px;color:#9ca3af;">{{appointment.timezone}}</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding:14px 20px;border-bottom:1px solid #fee2e2;vertical-align:top;background-color:#fff5f5;">
+                    <span style="font-size:11px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;color:#ef4444;">Lieu / Lien</span>
+                  </td>
+                  <td style="padding:14px 20px;border-bottom:1px solid #fee2e2;vertical-align:top;background-color:#ffffff;">
+                    <span style="font-size:14px;color:#111118;font-weight:500;">{{appointment.meeting_location}}</span>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="padding:14px 20px;vertical-align:top;background-color:#fff5f5;">
+                    <span style="font-size:11px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;color:#ef4444;">Contact</span>
+                  </td>
+                  <td style="padding:14px 20px;vertical-align:top;background-color:#ffffff;">
+                    <span style="font-size:14px;color:#111118;font-weight:500;">{{contact.name}}</span>
+                  </td>
+                </tr>
+
+              </table>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color:#fff5f5;border-radius:0 0 12px 12px;padding:20px 40px;text-align:center;border-top:1px solid #fee2e2;">
+              <p style="margin:0 0 4px;font-size:12px;color:#9ca3af;">
+                Courage Formation &mdash; <a href="https://courageformation.fr" style="color:#ef4444;text-decoration:none;">courageformation.fr</a>
+              </p>
+              <p style="margin:0;font-size:11px;color:#d1d5db;">
+                <a href="mailto:Courage@courageformation.fr" style="color:#9ca3af;text-decoration:none;">Courage@courageformation.fr</a>
+                &nbsp;&middot;&nbsp; 06 15 21 59 85
+              </p>
+            </td>
+          </tr>
+
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

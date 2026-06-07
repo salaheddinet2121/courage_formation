@@ -4,7 +4,7 @@ description: 'Statut juridique inadapté, NDA refusé, Qualiopi oublié... Voici
 pubDate: '2025-03-20'
 author: 'Équipe Courage Formation'
 tags: ['création OF', 'NDA', 'DREETS', 'statut juridique']
-coverImage: '/images/blog/blog-3.webp'
+coverImage: '/images/blog/post-3.webp?v=2'
 ---
 
 # Créer un organisme de formation : les 5 erreurs à éviter

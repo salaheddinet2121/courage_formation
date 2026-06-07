@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import DefaultLayout from '@/layouts/DefaultLayout.astro';
+import AboutContent from '@/components/sections/about-content';
 import BlogPosts from '@/components/sections/blog-posts';
 
 const blogPosts = await getCollection('blog');
@@ -10,60 +11,6 @@ const blogPosts = await getCollection('blog');
   title="À Propos — Courage Formation, votre cabinet de formation"
   description="Découvrez l'équipe Courage Formation, notre mission et nos valeurs. Nous accompagnons les formateurs et centres de formation à se lancer, se certifier et croître."
 >
-  <div class="section-padding container space-y-16">
-
-    <div class="text-center space-y-4 max-w-3xl mx-auto pt-8">
-      <span class="inline-block rounded-full bg-secondary px-3 py-1 text-xs text-secondary-foreground font-medium border border-secondary">
-        À propos
-      </span>
-      <h1 class="text-3xl font-bold md:text-4xl lg:text-5xl">
-        Notre mission : rendre la formation accessible à tous les experts
-      </h1>
-      <p class="text-muted-foreground text-base max-w-xl mx-auto">
-        Courage Formation est un cabinet spécialisé dans l'accompagnement des organismes de formation. Nous croyons que chaque expert mérite de transformer son savoir en activité prospère.
-      </p>
-    </div>
-
-    <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="space-y-4">
-        <h2 class="text-2xl font-bold">Notre histoire</h2>
-        <p class="text-sm text-muted-foreground leading-7">
-          Courage Formation est né d'un constat simple : des milliers de formateurs talentueux n'arrivent pas à lancer leur activité, non par manque de compétences, mais à cause de la complexité administrative et réglementaire du secteur.
-        </p>
-        <p class="text-sm text-muted-foreground leading-7">
-          Nous avons créé Courage Formation pour changer ça — en offrant un accompagnement clé en main qui transforme l'expertise en activité de formation rentable et conforme.
-        </p>
-      </div>
-      <div class="space-y-4">
-        <h2 class="text-2xl font-bold">Notre approche</h2>
-        <p class="text-sm text-muted-foreground leading-7">
-          Nous ne sommes pas un simple cabinet de conseil. Nous nous impliquons directement dans votre projet : nous créons votre OF, préparons votre audit Qualiopi, référençons vos formations au CPF et vous aidons à trouver vos premiers clients.
-        </p>
-        <p class="text-sm text-muted-foreground leading-7">
-          Notre modèle repose sur des résultats concrets et des garanties solides — parce que votre succès est notre meilleure publicité.
-        </p>
-      </div>
-    </div>
-
-    <div class="max-w-4xl mx-auto space-y-6">
-      <h2 class="text-2xl font-bold text-center">Nos valeurs</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        <div class="p-6 rounded-2xl space-y-2 text-center" style="background-color: #fafafa;">
-          <h3 class="font-bold">Expertise</h3>
-          <p class="text-xs text-muted-foreground leading-6">Nous maîtrisons le cadre réglementaire de la formation professionnelle dans ses moindres détails.</p>
-        </div>
-        <div class="p-6 rounded-2xl space-y-2 text-center" style="background-color: #fafafa;">
-          <h3 class="font-bold">Transparence</h3>
-          <p class="text-xs text-muted-foreground leading-6">Tarifs clairs, garanties écrites, résultats mesurables. Nous n'avons rien à cacher.</p>
-        </div>
-        <div class="p-6 rounded-2xl space-y-2 text-center" style="background-color: #fafafa;">
-          <h3 class="font-bold">Engagement</h3>
-          <p class="text-xs text-muted-foreground leading-6">Votre réussite est notre priorité. Nous sommes à vos côtés jusqu'à l'atteinte de vos objectifs.</p>
-        </div>
-      </div>
-    </div>
-
-    <BlogPosts posts={blogPosts.slice(0, 3)} client:load />
-
-  </div>
+  <AboutContent client:load />
+  <BlogPosts posts={blogPosts.slice(0, 3)} client:load />
 </DefaultLayout>

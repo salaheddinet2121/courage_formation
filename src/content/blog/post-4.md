@@ -4,7 +4,7 @@ description: 'RNCP ou Répertoire Spécifique ? Comprendre la différence pour c
 pubDate: '2025-03-05'
 author: 'Équipe Courage Formation'
 tags: ['RNCP', 'RS', 'certification', 'France Compétences']
-coverImage: '/images/blog/blog-4.webp'
+coverImage: '/images/blog/post-4.webp?v=2'
 ---
 
 # RNCP ou RS : quelle certification choisir ?

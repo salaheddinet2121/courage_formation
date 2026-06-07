@@ -1,0 +1,182 @@
+---
+import DefaultLayout from '@/layouts/DefaultLayout.astro';
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://courageformation.fr' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://courageformation.fr/services' },
+    { '@type': 'ListItem', position: 3, name: 'E-Qualiopi', item: 'https://courageformation.fr/services/qualiopi/e-qualiopi' },
+  ],
+};
+---
+
+<DefaultLayout
+  title="E-Qualiopi à 990€ — Formation e-learning Qualiopi | Courage Formation"
+  description="Obtenez Qualiopi en autonomie grâce à nos 90 vidéos e-learning, templates documents et checklist des 7 critères. Garantie remboursement 50% si non satisfait."
+  jsonLd={breadcrumbJsonLd}
+>
+  <article>
+
+    <div class="container max-w-5xl mx-auto px-4 pt-6 pb-0">
+      <div style="background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%);" class="rounded-3xl p-8 md:p-12">
+
+        <nav class="flex items-center gap-2 text-xs text-muted-foreground mb-8">
+          <a href="/" class="hover:text-foreground transition-colors">Accueil</a>
+          <span>/</span>
+          <a href="/services" class="hover:text-foreground transition-colors">Services</a>
+          <span>/</span>
+          <span class="text-foreground font-medium">E-Qualiopi</span>
+        </nav>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <span class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium border" style="background:#dbeafe;border-color:#93c5fd;color:#1d4ed8;">
+              Offre 1 — E-learning
+            </span>
+            <h1 class="text-3xl font-bold md:text-4xl lg:text-5xl leading-tight tracking-tight">
+              E-QUALIOPI<br/>Obtenez Qualiopi en autonomie
+            </h1>
+            <p class="text-base leading-7 text-muted-foreground">
+              90 vidéos, tous les templates, la checklist complète des 7 critères. Formez-vous à votre rythme et préparez votre audit sans accompagnement individuel.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <a href="/contact" class="inline-flex items-center rounded-full bg-foreground px-6 py-2.5 text-sm font-semibold text-background hover:bg-foreground/85 transition-colors">
+                Démarrer pour 990€
+              </a>
+              <a href="/services" class="inline-flex items-center gap-1.5 rounded-full border border-border px-6 py-2.5 text-sm font-semibold hover:bg-muted/50 transition-colors">
+                Comparer les offres
+              </a>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-blue-100 bg-white p-8 shadow-sm space-y-6">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-xs text-muted-foreground line-through">1 490€</p>
+                <p class="text-4xl font-bold">990€</p>
+              </div>
+              <span class="rounded-full bg-blue-50 text-blue-600 text-xs font-semibold px-3 py-1">-33%</span>
+            </div>
+            <div class="space-y-3">
+              {[
+                'E-learning 90 vidéos',
+                'Templates documents Qualiopi',
+                'Checklist des 7 critères',
+                'Accès groupe privé',
+                'Mises à jour incluses',
+              ].map((f) => (
+                <div class="flex items-center gap-2.5 text-sm">
+                  <svg class="size-4 shrink-0 text-blue-500" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+                  {f}
+                </div>
+              ))}
+            </div>
+            <div class="rounded-2xl bg-blue-50 p-4 text-xs text-blue-700 leading-5">
+              <span class="font-semibold">Garantie :</span> Remboursement à 50% si vous n'êtes pas satisfait du contenu.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container max-w-5xl mx-auto space-y-20 section-padding">
+
+      <!-- What's included -->
+      <div class="space-y-8">
+        <div class="space-y-2">
+          <h2 class="text-2xl font-bold md:text-3xl">Ce que comprend E-Qualiopi</h2>
+          <p class="text-muted-foreground text-sm">Tout ce qu'il vous faut pour préparer votre audit Qualiopi en autonomie.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          {[
+            { num: '01', title: '90 vidéos e-learning', desc: 'Un parcours structuré couvrant l\'intégralité des 7 critères Qualiopi — accessible à vie, à votre rythme.' },
+            { num: '02', title: 'Templates documents', desc: 'Tous les documents obligatoires pré-remplis : programme pédagogique, règlement intérieur, CGV, convention de formation.' },
+            { num: '03', title: 'Checklist des 7 critères', desc: 'Une checklist détaillée pour auto-évaluer votre conformité et identifier les points à corriger avant l\'audit.' },
+            { num: '04', title: 'Accès groupe privé', desc: 'Rejoignez une communauté de formateurs en cours de certification pour partager vos questions et retours d\'expérience.' },
+            { num: '05', title: 'Mises à jour incluses', desc: 'Votre accès est mis à jour à chaque évolution réglementaire Qualiopi, sans frais supplémentaires.' },
+            { num: '06', title: 'Accès à vie', desc: 'Pas d\'abonnement. Vous payez une fois et accédez au contenu sans limite de durée.' },
+          ].map((item) => (
+            <div class="rounded-2xl border border-border p-6 space-y-3 hover:border-blue-200 hover:shadow-sm transition-all">
+              <div class="flex items-center gap-3">
+                <span class="text-2xl font-bold text-blue-400 shrink-0">{item.num}</span>
+                <h3 class="font-semibold text-sm">{item.title}</h3>
+              </div>
+              <p class="text-xs leading-6 text-muted-foreground pl-9">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- For who -->
+      <div class="rounded-3xl border border-border overflow-hidden">
+        <div class="bg-muted/30 px-8 py-6 border-b border-border">
+          <h2 class="text-xl font-bold">Pour qui est cette offre ?</h2>
+        </div>
+        <div class="grid sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-border">
+          {[
+            { title: 'Vous êtes autonome', desc: 'Vous êtes à l\'aise avec les outils en ligne et vous préférez avancer à votre rythme.' },
+            { title: 'Votre OF est déjà structuré', desc: 'Vous avez déjà vos programmes et vos processus en place, il vous faut la méthode Qualiopi.' },
+            { title: 'Budget maîtrisé', desc: 'Vous souhaitez obtenir Qualiopi au meilleur rapport qualité/prix, sans accompagnement individuel.' },
+            { title: 'Pas pressé par le temps', desc: 'Vous n\'avez pas d\'échéance d\'audit imminente et pouvez vous former sur plusieurs semaines.' },
+          ].map((item) => (
+            <div class="p-7 space-y-2">
+              <h3 class="font-semibold text-sm">{item.title}</h3>
+              <p class="text-xs text-muted-foreground leading-6">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="space-y-6">
+        <h2 class="text-2xl font-bold">Questions fréquentes</h2>
+        <div class="divide-y divide-border rounded-2xl border border-border overflow-hidden">
+          {[
+            { q: 'Combien de temps faut-il pour suivre la formation ?', a: 'En moyenne 4 à 6 semaines en travaillant 1 à 2 heures par jour. Les contenus sont accessibles à vie, vous pouvez avancer à votre rythme.' },
+            { q: 'La formation est-elle suffisante pour passer l\'audit seul ?', a: 'Oui, si votre OF est déjà structuré. La formation vous donne tous les outils et la méthode. Pour un accompagnement individuel, nos offres Audits Blancs ou Offre Garantie sont plus adaptées.' },
+            { q: 'Que se passe-t-il si je ne suis pas satisfait ?', a: 'Nous vous remboursons 50% du montant payé si vous estimez que le contenu ne vous convient pas. Contactez-nous dans les 30 jours.' },
+            { q: 'Est-ce que le contenu est mis à jour ?', a: 'Oui. Chaque évolution du référentiel Qualiopi est intégrée dans la formation, sans frais supplémentaires.' },
+          ].map((item) => (
+            <div class="px-7 py-6 space-y-2">
+              <h3 class="font-semibold text-sm">{item.q}</h3>
+              <p class="text-sm text-muted-foreground leading-7">{item.a}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Compare / upgrade -->
+      <div class="space-y-5">
+        <h2 class="text-lg font-bold">Besoin de plus d'accompagnement ?</h2>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <a href="/services/qualiopi/audits-blancs" class="rounded-2xl border border-border p-6 space-y-2 hover:border-accent/40 hover:shadow-sm transition-all">
+            <span class="text-xs font-semibold text-accent uppercase tracking-wide">Offre 2</span>
+            <h3 class="font-semibold text-sm">Qualiopi + Audits Blancs — 1 990€</h3>
+            <p class="text-xs text-muted-foreground leading-5">E-Qualiopi + 3 simulations d'audit avec retours détaillés et sessions live.</p>
+            <p class="text-xs font-medium text-accent">Voir l'offre →</p>
+          </a>
+          <a href="/services/qualiopi/offre-garantie" class="rounded-2xl border border-border p-6 space-y-2 hover:border-purple-300 hover:shadow-sm transition-all">
+            <span class="text-xs font-semibold text-purple-600 uppercase tracking-wide">Offre 3</span>
+            <h3 class="font-semibold text-sm">Je Passe Ton Audit — 2 490€</h3>
+            <p class="text-xs text-muted-foreground leading-5">On passe l'audit à votre place. Garantie 100% réussite ou remboursé.</p>
+            <p class="text-xs font-medium text-purple-600">Voir l'offre →</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="rounded-3xl overflow-hidden" style="background: linear-gradient(135deg, #1e3a5f 0%, #1d4ed8 50%, #2563eb 100%);">
+        <div class="px-10 py-12 text-center space-y-5">
+          <h2 class="text-2xl font-bold text-white md:text-3xl">Prêt à démarrer E-Qualiopi ?</h2>
+          <p class="text-white/70 text-sm max-w-md mx-auto">Accédez aux 90 vidéos, templates et checklist dès aujourd'hui pour 990€.</p>
+          <a href="/contact" class="inline-flex items-center rounded-full bg-white text-foreground px-8 py-3 text-sm font-semibold hover:bg-white/90 transition-colors">
+            Démarrer pour 990€
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </article>
+</DefaultLayout>

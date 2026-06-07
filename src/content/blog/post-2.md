@@ -4,7 +4,7 @@ description: "Tout ce que vous devez savoir sur le CPF, l'EDOF et les étapes po
 pubDate: '2025-04-01'
 author: 'Équipe Courage Formation'
 tags: ['CPF', 'EDOF', 'financement', 'Mon Compte Formation']
-coverImage: '/images/blog/blog-2.webp'
+coverImage: '/images/blog/post-2.webp?v=2'
 ---
 
 # CPF et EDOF : comment référencer vos formations en 2025 ?

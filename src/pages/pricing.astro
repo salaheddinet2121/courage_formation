@@ -1,25 +1,81 @@
 ---
-import PricingSection from '@/components/sections/pricing';
+import PricingPage from '@/components/sections/pricing-page';
 import FAQ from '@/components/sections/faq';
 import DefaultLayout from '@/layouts/DefaultLayout.astro';
+
+const pricingJsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://courageformation.fr' },
+      { '@type': 'ListItem', position: 2, name: 'Tarifs', item: 'https://courageformation.fr/pricing' },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Offres Qualiopi — Courage Formation',
+    description: 'Trois offres d\'accompagnement Qualiopi à partir de 990€.',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        item: {
+          '@type': 'Service',
+          name: 'E-Qualiopi',
+          description: 'Formation e-learning complète pour obtenir Qualiopi en autonomie.',
+          url: 'https://courageformation.fr/services/qualiopi/e-qualiopi',
+          offers: {
+            '@type': 'Offer',
+            price: '990',
+            priceCurrency: 'EUR',
+            availability: 'https://schema.org/InStock',
+          },
+        },
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        item: {
+          '@type': 'Service',
+          name: 'Qualiopi + Audits Blancs',
+          description: '3 simulations d\'audit, coaching expert et 4 sessions live Q&R.',
+          url: 'https://courageformation.fr/services/qualiopi/audits-blancs',
+          offers: {
+            '@type': 'Offer',
+            price: '1990',
+            priceCurrency: 'EUR',
+            availability: 'https://schema.org/InStock',
+          },
+        },
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        item: {
+          '@type': 'Service',
+          name: 'Je Passe Ton Audit — Offre Garantie',
+          description: 'Un expert Courage Formation passe votre audit Qualiopi à votre place. Garantie 100% réussite.',
+          url: 'https://courageformation.fr/services/qualiopi/offre-garantie',
+          offers: {
+            '@type': 'Offer',
+            price: '2490',
+            priceCurrency: 'EUR',
+            availability: 'https://schema.org/InStock',
+          },
+        },
+      },
+    ],
+  },
+];
 ---
 
 <DefaultLayout
-  title="Tarifs — E-Qualiopi, Audits Blancs, Offre Garantie | Courage Formation"
-  description="Découvrez nos trois offres Qualiopi à partir de 990€. E-Qualiopi, Audits Blancs avec coaching, ou Offre Garantie avec prise en charge complète de votre audit."
+  title="Tarifs Qualiopi 2025 — E-Qualiopi, Audits Blancs, Offre Garantie | Courage Formation"
+  description="Obtenez Qualiopi à partir de 990€. E-Qualiopi e-learning, coaching avec audits blancs ou prise en charge complète de l'audit. Garantie sur toutes les offres."
+  jsonLd={pricingJsonLd}
 >
-  <div class="section-padding container text-center space-y-4 max-w-2xl mx-auto">
-    <span class="inline-block rounded-full bg-secondary px-3 py-1 text-xs text-secondary-foreground font-medium border border-secondary">
-      Tarifs
-    </span>
-    <h1 class="text-3xl font-bold md:text-4xl lg:text-5xl">
-      Des offres claires avec garantie de résultats
-    </h1>
-    <p class="text-muted-foreground text-base">
-      Choisissez l'accompagnement qui correspond à votre situation et à vos ambitions.
-    </p>
-  </div>
-
-  <PricingSection client:load />
+  <PricingPage client:load />
   <FAQ client:load />
 </DefaultLayout>

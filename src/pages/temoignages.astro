@@ -1,0 +1,11 @@
+---
+import DefaultLayout from '@/layouts/DefaultLayout.astro';
+import Testimonials from '@/components/sections/testimonials';
+---
+
+<DefaultLayout
+  title="Témoignages — Courage Formation"
+  description="Découvrez ce que disent les organismes de formation que nous avons accompagnés : Qualiopi, EDOF, CPF, création d'OF. 25 succès documentés."
+>
+  <Testimonials client:load />
+</DefaultLayout>

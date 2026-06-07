@@ -4,7 +4,7 @@ description: "Un site web professionnel génère de la crédibilité, capte des 
 pubDate: '2025-02-05'
 author: 'Équipe Courage Formation'
 tags: ['site web', 'marketing', 'SEO', 'branding']
-coverImage: '/images/blog/blog-6.webp'
+coverImage: '/images/blog/post-6.webp?v=2'
 ---
 
 # Pourquoi votre site web est votre meilleur commercial

@@ -4,7 +4,7 @@ description: "Meta Ads, SEO, LinkedIn, prescripteurs... Découvrez les canaux d'
 pubDate: '2025-02-20'
 author: 'Équipe Courage Formation'
 tags: ['leads', 'acquisition', 'marketing', 'formateurs']
-coverImage: '/images/blog/blog-5.webp'
+coverImage: '/images/blog/post-5.webp?v=2'
 ---
 
 # Génération de leads pour formateurs : les 6 canaux qui fonctionnent

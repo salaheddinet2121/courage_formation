@@ -1,0 +1,200 @@
+---
+import DefaultLayout from '@/layouts/DefaultLayout.astro';
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://courageformation.fr' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://courageformation.fr/services' },
+    { '@type': 'ListItem', position: 3, name: 'Qualiopi + Audits Blancs', item: 'https://courageformation.fr/services/qualiopi/audits-blancs' },
+  ],
+};
+---
+
+<DefaultLayout
+  title="Qualiopi + Audits Blancs à 1 990€ — Simulations d'audit avec coaching | Courage Formation"
+  description="Préparez votre audit Qualiopi avec 3 simulations d'audit, retours détaillés d'experts et 4 sessions live Q&R. Garantie suivi 3 mois si refus audit."
+  jsonLd={breadcrumbJsonLd}
+>
+  <article>
+
+    <div class="container max-w-5xl mx-auto px-4 pt-6 pb-0">
+      <div style="background: linear-gradient(135deg, #fdf4ff 0%, #eff6ff 100%);" class="rounded-3xl p-8 md:p-12">
+
+        <nav class="flex items-center gap-2 text-xs text-muted-foreground mb-8">
+          <a href="/" class="hover:text-foreground transition-colors">Accueil</a>
+          <span>/</span>
+          <a href="/services" class="hover:text-foreground transition-colors">Services</a>
+          <span>/</span>
+          <span class="text-foreground font-medium">Qualiopi + Audits Blancs</span>
+        </nav>
+
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div class="space-y-6">
+            <span class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium border" style="background:#f3e8ff;border-color:#d8b4fe;color:#7c3aed;">
+              Offre 2 — Populaire
+            </span>
+            <h1 class="text-3xl font-bold md:text-4xl lg:text-5xl leading-tight tracking-tight">
+              QUALIOPI +<br/>AUDITS BLANCS
+            </h1>
+            <p class="text-base leading-7 text-muted-foreground">
+              Tout le contenu E-Qualiopi, plus 3 simulations d'audit avec un expert, 4 sessions live et des retours détaillés pour arriver le jour J sans surprise.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <a href="/contact" class="inline-flex items-center rounded-full px-6 py-2.5 text-sm font-semibold text-white transition-colors" style="background:#7c3aed;">
+                Démarrer pour 1 990€
+              </a>
+              <a href="/services" class="inline-flex items-center gap-1.5 rounded-full border border-border px-6 py-2.5 text-sm font-semibold hover:bg-muted/50 transition-colors">
+                Comparer les offres
+              </a>
+            </div>
+          </div>
+
+          <div class="rounded-3xl border border-purple-100 bg-white p-8 shadow-sm space-y-6">
+            <div class="flex items-center justify-between">
+              <div>
+                <p class="text-xs text-muted-foreground line-through">3 490€</p>
+                <p class="text-4xl font-bold">1 990€</p>
+              </div>
+              <span class="rounded-full text-xs font-semibold px-3 py-1" style="background:#f3e8ff;color:#7c3aed;">-43%</span>
+            </div>
+            <div class="space-y-3">
+              {[
+                'Tout E-Qualiopi (90 vidéos + templates)',
+                '3 audits blancs (simulations réelles)',
+                'Retours détaillés par expert',
+                '4 sessions live Q&R',
+                'Accès groupe privé',
+              ].map((f) => (
+                <div class="flex items-center gap-2.5 text-sm">
+                  <svg class="size-4 shrink-0" style="color:#7c3aed;" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" /></svg>
+                  {f}
+                </div>
+              ))}
+            </div>
+            <div class="rounded-2xl p-4 text-xs leading-5" style="background:#f3e8ff;color:#6d28d9;">
+              <span class="font-semibold">Garantie :</span> Si votre audit est refusé, nous vous accompagnons gratuitement pendant 3 mois supplémentaires.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container max-w-5xl mx-auto space-y-20 section-padding">
+
+      <!-- What's included -->
+      <div class="space-y-8">
+        <div class="space-y-2">
+          <h2 class="text-2xl font-bold md:text-3xl">Ce que comprend l'offre Audits Blancs</h2>
+          <p class="text-muted-foreground text-sm">Un accompagnement structuré pour arriver à votre audit en pleine confiance.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+          {[
+            { num: '01', title: 'Tout E-Qualiopi inclus', desc: '90 vidéos e-learning, templates documents, checklist des 7 critères et accès groupe privé — la base complète.' },
+            { num: '02', title: '3 simulations d\'audit', desc: 'Trois mises en situation réelles animées par un expert Qualiopi. Vous vivez l\'audit avant l\'audit.' },
+            { num: '03', title: 'Retours détaillés', desc: 'Après chaque simulation, vous recevez un rapport écrit précisant les points forts, les écarts et les actions correctives.' },
+            { num: '04', title: '4 sessions live Q&R', desc: 'Quatre sessions collectives en visio pour poser vos questions, lever vos blocages et partager les bonnes pratiques.' },
+            { num: '05', title: 'Plan d\'action personnalisé', desc: 'À l\'issue des audits blancs, nous établissons un plan d\'action sur-mesure pour combler vos derniers écarts.' },
+            { num: '06', title: 'Suivi 3 mois si refus', desc: 'Si votre audit Qualiopi est refusé malgré notre accompagnement, nous continuons à vous suivre gratuitement pendant 3 mois.' },
+          ].map((item) => (
+            <div class="rounded-2xl border border-border p-6 space-y-3 transition-all hover:shadow-sm" style="hover:border-color:#d8b4fe;">
+              <div class="flex items-center gap-3">
+                <span class="text-2xl font-bold shrink-0" style="color:#a78bfa;">{item.num}</span>
+                <h3 class="font-semibold text-sm">{item.title}</h3>
+              </div>
+              <p class="text-xs leading-6 text-muted-foreground pl-9">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- For who -->
+      <div class="rounded-3xl border border-border overflow-hidden">
+        <div class="bg-muted/30 px-8 py-6 border-b border-border">
+          <h2 class="text-xl font-bold">Pour qui est cette offre ?</h2>
+        </div>
+        <div class="grid sm:grid-cols-2 divide-y sm:divide-y-0 sm:divide-x divide-border">
+          {[
+            { title: 'Vous voulez être accompagné', desc: 'Vous souhaitez plus qu\'un e-learning : vous voulez des retours d\'expert sur votre dossier réel.' },
+            { title: 'Vous avez une échéance', desc: 'Votre audit est planifié dans les 3 à 6 mois et vous voulez maximiser vos chances de succès.' },
+            { title: 'Vous voulez vous entraîner', desc: 'Passer un audit sans l\'avoir simulé est risqué. Les audits blancs vous permettent de corriger avant le jour J.' },
+            { title: 'Vous voulez une garantie', desc: 'En cas de refus audit, vous bénéficiez d\'un suivi gratuit de 3 mois pour préparer votre second passage.' },
+          ].map((item) => (
+            <div class="p-7 space-y-2">
+              <h3 class="font-semibold text-sm">{item.title}</h3>
+              <p class="text-xs text-muted-foreground leading-6">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Comparison table -->
+      <div class="space-y-5">
+        <h2 class="text-2xl font-bold">E-Qualiopi vs Audits Blancs vs Offre Garantie</h2>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm border-collapse">
+            <thead>
+              <tr class="border-b border-border">
+                <th class="text-left py-3 px-4 text-xs font-semibold text-muted-foreground">Fonctionnalité</th>
+                <th class="text-center py-3 px-4 text-xs font-semibold text-muted-foreground">E-Qualiopi<br/>990€</th>
+                <th class="text-center py-3 px-4 text-xs font-semibold rounded-t-lg" style="background:#f3e8ff;color:#7c3aed;">Audits Blancs<br/>1 990€</th>
+                <th class="text-center py-3 px-4 text-xs font-semibold text-muted-foreground">Offre Garantie<br/>2 490€</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-border">
+              {[
+                ['E-learning 90 vidéos', true, true, true],
+                ['Templates documents', true, true, true],
+                ['Simulations d\'audit', false, '3 audits', '3 audits'],
+                ['Sessions live Q&R', false, '4 sessions', '4 sessions'],
+                ['Expert passe l\'audit', false, false, true],
+                ['Suivi post-certification', false, false, true],
+                ['Garantie', '50% remboursé', 'Suivi 3 mois', '100% réussite'],
+              ].map((row) => (
+                <tr class="hover:bg-muted/20">
+                  <td class="py-3 px-4 text-xs text-muted-foreground">{row[0]}</td>
+                  {[1,2,3].map((i) => (
+                    <td class={`py-3 px-4 text-center text-xs ${i === 2 ? 'font-medium' : ''}`} style={i === 2 ? 'background:#f3e8ff;' : ''}>
+                      {row[i] === true ? '✓' : row[i] === false ? '—' : row[i]}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="space-y-6">
+        <h2 class="text-2xl font-bold">Questions fréquentes</h2>
+        <div class="divide-y divide-border rounded-2xl border border-border overflow-hidden">
+          {[
+            { q: 'Comment se déroule un audit blanc ?', a: 'L\'expert joue le rôle de l\'auditeur Qualiopi. Il passe en revue vos indicateurs, vos documents et vos processus exactement comme lors d\'un vrai audit. Vous recevez ensuite un rapport écrit.' },
+            { q: 'Les sessions live sont-elles enregistrées ?', a: 'Oui, toutes les sessions live Q&R sont enregistrées et disponibles en replay pour les membres du programme.' },
+            { q: 'Que se passe-t-il si mon audit est refusé ?', a: 'Nous activons la garantie : vous bénéficiez d\'un accompagnement individuel gratuit pendant 3 mois pour préparer votre second passage.' },
+            { q: 'Puis-je passer à l\'Offre Garantie après ?', a: 'Oui, si vous souhaitez qu\'un expert passe l\'audit à votre place, vous pouvez upgrader vers l\'Offre Garantie. Contactez-nous pour les modalités.' },
+          ].map((item) => (
+            <div class="px-7 py-6 space-y-2">
+              <h3 class="font-semibold text-sm">{item.q}</h3>
+              <p class="text-sm text-muted-foreground leading-7">{item.a}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="rounded-3xl overflow-hidden" style="background: linear-gradient(135deg, #3b0764 0%, #6d28d9 50%, #7c3aed 100%);">
+        <div class="px-10 py-12 text-center space-y-5">
+          <h2 class="text-2xl font-bold text-white md:text-3xl">Prêt à simuler votre audit ?</h2>
+          <p class="text-white/70 text-sm max-w-md mx-auto">3 audits blancs, retours experts, sessions live — tout pour réussir du premier coup.</p>
+          <a href="/contact" class="inline-flex items-center rounded-full bg-white text-foreground px-8 py-3 text-sm font-semibold hover:bg-white/90 transition-colors">
+            Démarrer pour 1 990€
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </article>
+</DefaultLayout>

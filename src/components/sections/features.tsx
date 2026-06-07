@@ -10,6 +10,7 @@ import {
   TbBoltFilled,
   TbHeartFilled,
 } from 'react-icons/tb';
+import SectionHeader from '@/components/elements/section-header';
 
 const services = [
   {
@@ -58,15 +59,20 @@ const cardVariants = {
 const Features = () => {
   return (
     <section className="section-padding container space-y-12 text-center">
-      <motion.h2
-        className="mx-auto max-w-xl text-3xl font-bold leading-tight md:text-4xl lg:text-5xl"
+      <motion.div
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       >
-        Un accompagnement complet pour lancer et développer votre centre de formation
-      </motion.h2>
+        <SectionHeader
+          isCenter
+          category="Services"
+          icon={null}
+          title="Un accompagnement complet pour lancer et développer votre centre de formation"
+          description="De la création à la croissance, nous couvrons chaque étape."
+        />
+      </motion.div>
 
       <motion.div
         className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 text-left"
@@ -87,7 +93,7 @@ const Features = () => {
           >
             <div className="flex items-center gap-2.5 mb-3">
               {service.icon}
-              <h3 className="font-semibold text-sm group-hover:text-accent transition-colors">{service.title}</h3>
+              <h3 className="font-medium text-sm group-hover:text-accent transition-colors">{service.title}</h3>
             </div>
             <p className="text-sm leading-6 text-muted-foreground">
               {service.description}

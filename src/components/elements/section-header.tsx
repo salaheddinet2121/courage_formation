@@ -1,7 +1,5 @@
 import React from 'react';
-
 import CategoryBadge from './category-badge';
-
 import { cn } from '@/lib/utils';
 
 interface SectionHeaderProps {
@@ -9,46 +7,28 @@ interface SectionHeaderProps {
   title: string;
   description: string;
   className?: string;
-  icon: React.ReactNode;
+  icon?: React.ReactNode;
   isCenter?: boolean;
 }
 
 export default function SectionHeader({
   title,
-  icon,
   category,
   description,
   className = '',
   isCenter = false,
 }: SectionHeaderProps) {
   return (
-    <div
-      className={cn(
-        'flex flex-col gap-2.5 md:flex-row md:items-end',
-        isCenter &&
-          'flex-col items-start justify-center md:flex-col md:items-center',
-        className,
+    <div className={cn('flex flex-col gap-4', isCenter && 'items-center text-center', className)}>
+      <CategoryBadge label={category} />
+      <h2 className="text-2xl font-bold md:text-4xl lg:text-5xl tracking-tight leading-tight">
+        {title}
+      </h2>
+      {description && (
+        <p className={cn('text-muted-foreground text-base max-w-xl', isCenter && 'mx-auto')}>
+          {description}
+        </p>
       )}
-    >
-      <div
-        className={cn(
-          'flex flex-1 flex-col gap-6 md:gap-8',
-          isCenter && '!gap-3 md:items-center',
-        )}
-      >
-        <CategoryBadge label={category} icon={icon} />
-        <h2 className="text-2xl md:text-4xl md:text-balance lg:text-5xl lg:leading-14">
-          {title}
-        </h2>
-      </div>
-      <p
-        className={cn(
-          'flex-1 text-xl text-pretty md:text-end',
-          isCenter && 'text-start md:text-center',
-        )}
-      >
-        {description}
-      </p>
     </div>
   );
 }

@@ -9,10 +9,10 @@ import { cn } from '@/lib/utils';
 
 const ITEMS = [
   { label: 'Services', href: '/services' },
-  { label: 'Formations', href: '/formations' },
-  { label: 'Incubateur', href: '/incubateur' },
+  { label: 'Tarifs', href: '/pricing' },
+  { label: 'Témoignages', href: '/temoignages' },
+  { label: 'FAQ Qualiopi', href: '/faq-qualiopi' },
   { label: 'Blog', href: '/blog' },
-  { label: 'Resources', href: '/resources' },
   { label: 'A propos', href: '/about' },
 ];
 

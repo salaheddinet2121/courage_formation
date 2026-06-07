@@ -18,20 +18,29 @@ export default function ContactPage() {
       </div>
 
       {/* Booking widget */}
-      <iframe
-        src="https://links.scrollia.fr/widget/booking/uj4LM4o42B9A8A63hGUI"
-        style={{ width: '100%', border: 'none', overflow: 'hidden' }}
-        scrolling="no"
-        id="uj4LM4o42B9A8A63hGUI_contact"
+      <div
+        className="rounded-2xl overflow-hidden"
+        style={{ minHeight: '600px' }}
+        dangerouslySetInnerHTML={{
+          __html: `
+            <iframe
+              src="https://api.leadconnectorhq.com/widget/booking/uj4LM4o42B9A8A63hGUI"
+              style="width:100%;border:none;overflow:hidden;min-height:600px;"
+              scrolling="no"
+              id="uj4LM4o42B9A8A63hGUI_contact"
+            ></iframe>
+            <script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
+          `,
+        }}
       />
 
       {/* Contact details */}
       <div className="mt-10 flex flex-wrap gap-6">
-        <a href="mailto:Courage@courageformation.fr" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors">
+        <a href="mailto:contact@go.courageformation.fr" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors">
           <div className="size-8 rounded-full border border-border flex items-center justify-center shrink-0">
             <Mail className="size-4" />
           </div>
-          Courage@courageformation.fr
+          contact@go.courageformation.fr
         </a>
         <a href="tel:+33615215985" className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground transition-colors">
           <div className="size-8 rounded-full border border-border flex items-center justify-center shrink-0">

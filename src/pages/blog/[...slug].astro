@@ -14,9 +14,50 @@ export async function getStaticPaths() {
 
 const post = Astro.props;
 const { Content } = await render(post);
+
+const postUrl = `https://courageformation.fr/blog/${post.id}`;
+const pubDate = post.data.pubDate instanceof Date ? post.data.pubDate.toISOString() : new Date(post.data.pubDate).toISOString();
+
+const articleJsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.data.title,
+    description: post.data.description,
+    author: { '@type': 'Organization', name: post.data.author || 'Équipe Courage Formation', url: 'https://courageformation.fr' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Courage Formation',
+      logo: { '@type': 'ImageObject', url: 'https://courageformation.fr/layout/logo.webp' },
+    },
+    datePublished: pubDate,
+    dateModified: pubDate,
+    url: postUrl,
+    image: post.data.coverImage ? `https://courageformation.fr${post.data.coverImage}` : 'https://courageformation.fr/og-image.jpg',
+    mainEntityOfPage: { '@type': 'WebPage', '@id': postUrl },
+    inLanguage: 'fr-FR',
+    keywords: post.data.tags?.join(', '),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://courageformation.fr' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://courageformation.fr/blog' },
+      { '@type': 'ListItem', position: 3, name: post.data.title, item: postUrl },
+    ],
+  },
+];
 ---
 
-<DefaultLayout title={post.data.title} description={post.data.description}>
+<DefaultLayout
+  title={post.data.title}
+  description={post.data.description}
+  type="article"
+  publishedTime={pubDate}
+  author={post.data.author || 'Équipe Courage Formation'}
+  jsonLd={articleJsonLd}
+>
   <BlogPost post={[post]} client:load>
     <Content />
   </BlogPost>

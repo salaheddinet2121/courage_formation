@@ -1,0 +1,305 @@
+- generic [ref=e3]:
+  - banner [ref=e7]:
+    - generic [ref=e8]:
+      - link "Courage Formation" [ref=e9] [cursor=pointer]:
+        - /url: /
+        - img "Courage Formation" [ref=e10]
+      - navigation [ref=e11]:
+        - list [ref=e12]:
+          - listitem [ref=e13]:
+            - link "Services" [ref=e14] [cursor=pointer]:
+              - /url: /services
+          - listitem [ref=e15]:
+            - link "Tarifs" [ref=e16] [cursor=pointer]:
+              - /url: /pricing
+          - listitem [ref=e17]:
+            - link "FAQ Qualiopi" [ref=e18] [cursor=pointer]:
+              - /url: /faq-qualiopi
+          - listitem [ref=e19]:
+            - link "Blog" [ref=e20] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=e21]:
+            - link "A propos" [ref=e22] [cursor=pointer]:
+              - /url: /about
+      - link "Diagnostic gratuit" [ref=e24] [cursor=pointer]:
+        - /url: /contact
+        - img
+        - text: Diagnostic gratuit
+  - main [ref=e25]:
+    - article [ref=e27]:
+      - link "Retour au blog" [ref=e28] [cursor=pointer]:
+        - /url: /blog
+        - img [ref=e29]
+        - text: Retour au blog
+      - generic [ref=e31]:
+        - time [ref=e32]: 12 juin 2025
+        - 'heading "Qualiopi, RNCP, RS, CPF : comprendre les différences et les liens" [level=1] [ref=e33]'
+        - paragraph [ref=e34]: "Qualiopi, RNCP, RS, CPF, EDOF : ces acronymes vous perdent ? Ce guide explique ce que chacun signifie, à quoi il sert et comment ils s'articulent pour votre OF."
+      - 'img "Qualiopi, RNCP, RS, CPF : comprendre les différences et les liens" [ref=e36]'
+      - generic [ref=e38]:
+        - 'heading "Qualiopi, RNCP, RS, CPF : comprendre les différences et les liens" [level=1] [ref=e39]'
+        - paragraph [ref=e40]: Dans le secteur de la formation professionnelle, les acronymes se multiplient. Qualiopi, RNCP, RS, CPF, EDOF, OPCO… beaucoup de formateurs confondent ces termes ou ne savent pas exactement comment ils s’articulent.
+        - paragraph [ref=e41]: Ce guide démêle tout en moins de 10 minutes.
+        - separator [ref=e42]
+        - heading "Les 4 notions clés" [level=2] [ref=e43]
+        - heading "Qualiopi — La certification qualité de l’organisme" [level=3] [ref=e44]
+        - paragraph [ref=e45]:
+          - text: Qualiopi est une
+          - strong [ref=e46]: certification de la qualité des processus
+          - text: "de votre organisme de formation. Elle ne dit rien sur la valeur de vos formations sur le marché de l’emploi — elle certifie que votre OF fonctionne de façon qualitative : analyse des besoins, suivi des apprenants, satisfaction, amélioration continue."
+        - paragraph [ref=e47]:
+          - strong [ref=e48]: "Délivrée par :"
+          - text: un organisme certificateur accrédité par le
+          - link "COFRAC" [ref=e49] [cursor=pointer]:
+            - /url: https://www.cofrac.fr/
+          - strong [ref=e50]: "Durée :"
+          - text: 3 ans, renouvelable
+          - strong [ref=e51]: "Obligatoire pour :"
+          - text: accéder aux financements publics (CPF, OPCO, France Travail…)
+        - heading "RNCP — Le Répertoire National des Certifications Professionnelles" [level=3] [ref=e52]
+        - paragraph [ref=e53]:
+          - text: Le RNCP est le registre des
+          - strong [ref=e54]: certifications professionnelles reconnues par l’État
+          - text: . Une certification inscrite au RNCP atteste qu’un individu a acquis des compétences reconnues sur le marché du travail (diplômes, titres professionnels, CQP…).
+        - paragraph [ref=e55]:
+          - strong [ref=e56]: "Géré par :"
+          - text: France Compétences
+          - strong [ref=e57]: "Concerne :"
+          - text: les certifications (pas les organismes)
+          - strong [ref=e58]: "Pour les OF :"
+          - text: si votre formation prépare à une certification RNCP, elle est éligible au CPF
+        - paragraph [ref=e59]:
+          - link "Consulter le RNCP sur francetravail.fr" [ref=e60] [cursor=pointer]:
+            - /url: https://francetravail.fr/formation.html
+        - heading "RS — Le Répertoire Spécifique" [level=3] [ref=e61]
+        - paragraph [ref=e62]:
+          - text: Le RS enregistre les
+          - strong [ref=e63]: certifications de compétences complémentaires
+          - text: qui ne correspondent pas à un bloc de compétences d’une certification RNCP. On y trouve souvent des certifications de compétences transversales (langues, numérique, management…).
+        - paragraph [ref=e64]:
+          - strong [ref=e65]: "Exemple :"
+          - text: le TOSA (compétences bureautiques), le CLÉA (socle de compétences)
+        - paragraph [ref=e66]:
+          - strong [ref=e67]: "Pour les OF :"
+          - text: une formation préparant à une certification RS est également éligible au CPF.
+        - heading "CPF — Le Compte Personnel de Formation" [level=3] [ref=e68]
+        - paragraph [ref=e69]:
+          - text: Le CPF est le
+          - strong [ref=e70]: dispositif de financement
+          - text: qui permet à tout actif (salarié ou non) de financer une formation via ses droits accumulés tout au long de sa carrière. Depuis 2019, le CPF est monétisé (en euros, non plus en heures).
+        - paragraph [ref=e71]:
+          - strong [ref=e72]: "Montant moyen :"
+          - text: 500€ par an (jusqu’à 5 000€ cumulés, 8 000€ pour les peu qualifiés)
+          - strong [ref=e73]: "Géré par :"
+          - text: la Caisse des Dépôts sur
+          - link "moncompteformation.gouv.fr" [ref=e74] [cursor=pointer]:
+            - /url: https://www.moncompteformation.gouv.fr/
+        - separator [ref=e75]
+        - heading "Comment ces éléments s’articulent pour votre OF ?" [level=2] [ref=e76]
+        - code [ref=e78]:
+          - generic [ref=e79]: Votre OF obtient QUALIOPI
+          - generic [ref=e80]: ↓
+          - generic [ref=e81]: Vous pouvez accéder aux financements publics
+          - generic [ref=e82]: ↓
+          - generic [ref=e83]: "Pour le CPF spécifiquement :"
+          - generic [ref=e84]: Votre formation doit préparer à une certification RNCP ou RS
+          - generic [ref=e85]: ↓
+          - generic [ref=e86]: Vous vous inscrivez sur EDOF (plateforme Caisse des Dépôts)
+          - generic [ref=e87]: ↓
+          - generic [ref=e88]: Votre formation apparaît sur Mon Compte Formation
+          - generic [ref=e89]: ↓
+          - generic [ref=e90]: Les apprenants peuvent financer avec leur CPF
+        - separator [ref=e91]
+        - heading "Qualiopi seule suffit-elle pour le CPF ?" [level=2] [ref=e92]
+        - paragraph [ref=e93]:
+          - strong [ref=e94]: Non.
+          - text: "Qualiopi est une condition nécessaire mais pas suffisante. Pour qu’une formation soit éligible au CPF, elle doit également :"
+        - list [ref=e95]:
+          - listitem [ref=e96]:
+            - strong [ref=e97]: Préparer à une certification inscrite au RNCP ou au RS
+          - listitem [ref=e98]:
+            - strong [ref=e99]: Être référencée sur la plateforme EDOF
+          - listitem [ref=e100]: Répondre à d’autres critères spécifiques (absence de condamnation pénale, NDA valide…)
+        - paragraph [ref=e101]: Si votre formation ne prépare pas à une certification RNCP/RS, elle ne peut pas être financée par le CPF — même si vous avez Qualiopi.
+        - separator [ref=e102]
+        - heading "Peut-on créer une certification RNCP ou RS ?" [level=2] [ref=e103]
+        - paragraph [ref=e104]: Oui, mais c’est une démarche longue et exigeante. France Compétences examine les demandes de création ou de renouvellement de certifications.
+        - paragraph [ref=e105]: "Pour les OF, deux voies :"
+        - list [ref=e106]:
+          - listitem [ref=e107]:
+            - strong [ref=e108]: Créer sa propre certification
+            - text: et la faire enregistrer au RNCP ou RS (processus long, 1 à 2 ans)
+          - listitem [ref=e109]:
+            - strong [ref=e110]: Préparer à une certification existante
+            - text: enregistrée par un autre organisme (Pôle emploi formation, universités, branches professionnelles…)
+        - paragraph [ref=e111]:
+          - link "Procédure d’enregistrement sur francetravail.fr" [ref=e112] [cursor=pointer]:
+            - /url: https://francetravail.fr/formation.html
+        - separator [ref=e113]
+        - heading "Tableau récapitulatif" [level=2] [ref=e114]
+        - table [ref=e115]:
+          - rowgroup [ref=e116]:
+            - row "Qualiopi RNCP RS CPF" [ref=e117]:
+              - columnheader [ref=e118]
+              - columnheader "Qualiopi" [ref=e119]
+              - columnheader "RNCP" [ref=e120]
+              - columnheader "RS" [ref=e121]
+              - columnheader "CPF" [ref=e122]
+          - rowgroup [ref=e123]:
+            - row "Type Certification OF Répertoire certifications Répertoire compétences Dispositif financement" [ref=e124]:
+              - cell "Type" [ref=e125]
+              - cell "Certification OF" [ref=e126]
+              - cell "Répertoire certifications" [ref=e127]
+              - cell "Répertoire compétences" [ref=e128]
+              - cell "Dispositif financement" [ref=e129]
+            - row "Porte sur L’organisme La certification visée La compétence ciblée Le financement" [ref=e130]:
+              - cell "Porte sur" [ref=e131]
+              - cell "L’organisme" [ref=e132]
+              - cell "La certification visée" [ref=e133]
+              - cell "La compétence ciblée" [ref=e134]
+              - cell "Le financement" [ref=e135]
+            - row "Qui la délivre Certificateur COFRAC France Compétences France Compétences Caisse des Dépôts" [ref=e136]:
+              - cell "Qui la délivre" [ref=e137]
+              - cell "Certificateur COFRAC" [ref=e138]
+              - cell "France Compétences" [ref=e139]
+              - cell "France Compétences" [ref=e140]
+              - cell "Caisse des Dépôts" [ref=e141]
+            - row "Durée 3 ans Variable (3-5 ans) Variable Droits à vie" [ref=e142]:
+              - cell "Durée" [ref=e143]
+              - cell "3 ans" [ref=e144]
+              - cell "Variable (3-5 ans)" [ref=e145]
+              - cell "Variable" [ref=e146]
+              - cell "Droits à vie" [ref=e147]
+            - row "Obligatoire Pour fonds publics Non Non N/A" [ref=e148]:
+              - cell "Obligatoire" [ref=e149]
+              - cell "Pour fonds publics" [ref=e150]
+              - cell "Non" [ref=e151]
+              - cell "Non" [ref=e152]
+              - cell "N/A" [ref=e153]
+        - separator [ref=e154]
+        - heading "Les combinaisons gagnantes pour un OF" [level=2] [ref=e155]
+        - heading "OF de formation continue + RNCP" [level=3] [ref=e156]
+        - paragraph [ref=e157]: Vous préparez des apprenants à des titres professionnels reconnus → éligibilité CPF + crédibilité renforcée.
+        - heading "OF bilan de compétences" [level=3] [ref=e158]
+        - paragraph [ref=e159]: Qualiopi sur la catégorie “bilan de compétences” → accès direct à EDOF sans besoin de RNCP/RS.
+        - heading "OF VAE" [level=3] [ref=e160]
+        - paragraph [ref=e161]: Qualiopi sur la catégorie VAE → accès aux financements CPF et OPCO pour l’accompagnement VAE.
+        - separator [ref=e162]
+        - heading "Conclusion" [level=2] [ref=e163]
+        - paragraph [ref=e164]: Qualiopi, RNCP, RS et CPF sont quatre briques complémentaires du système de financement de la formation professionnelle française. Maîtriser leur articulation vous permet de maximiser vos sources de revenus et de construire une offre de formation solide et financeable.
+        - paragraph [ref=e165]:
+          - strong [ref=e166]: Vous voulez savoir quelle combinaison est la plus adaptée à votre activité ?
+          - text: Nos experts vous conseillent lors d’un diagnostic gratuit.
+        - paragraph [ref=e167]:
+          - link "Prendre rendez-vous →" [ref=e168] [cursor=pointer]:
+            - /url: /contact
+  - generic [ref=e170]:
+    - img
+    - generic [ref=e171]:
+      - heading "Prêt à lancer votre organisme de formation ?" [level=2] [ref=e172]:
+        - text: Prêt à lancer votre
+        - text: organisme de formation ?
+      - paragraph [ref=e173]: Réservez un diagnostic gratuit et obtenez un plan d'action clair en 15 minutes. Sans engagement.
+      - generic [ref=e174]:
+        - link "Réserver un diagnostic gratuit" [ref=e175] [cursor=pointer]:
+          - /url: /contact
+          - img [ref=e176]
+          - text: Réserver un diagnostic gratuit
+        - link "En savoir plus" [ref=e179] [cursor=pointer]:
+          - /url: /formations
+          - text: En savoir plus
+          - img [ref=e180]
+      - generic [ref=e182]:
+        - generic [ref=e183]:
+          - img [ref=e184]
+          - text: Sans engagement
+          - generic [ref=e186]: ·
+        - generic [ref=e187]:
+          - img [ref=e188]
+          - text: Diagnostic gratuit
+          - generic [ref=e190]: ·
+        - generic [ref=e191]:
+          - img [ref=e192]
+          - text: Réponse sous 24h
+  - contentinfo [ref=e194]:
+    - generic [ref=e195]:
+      - generic [ref=e196]:
+        - generic [ref=e197]:
+          - link "Courage Formation" [ref=e199] [cursor=pointer]:
+            - /url: /
+            - img "Courage Formation" [ref=e200]
+          - paragraph [ref=e201]: Lancez votre organisme de formation avec un accompagnement expert, rapide et conforme.
+          - link "Prendre rendez-vous" [ref=e202] [cursor=pointer]:
+            - /url: /contact
+          - generic [ref=e203]:
+            - link "Facebook" [ref=e204] [cursor=pointer]:
+              - /url: https://www.facebook.com/profile.php?id=61582292682722
+              - img [ref=e205]
+            - link "LinkedIn" [ref=e207] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/driss-rafiq-b99a3116a/
+              - img [ref=e208]
+            - link "YouTube" [ref=e210] [cursor=pointer]:
+              - /url: https://www.youtube.com/@CourageFormation
+              - img [ref=e211]
+        - generic [ref=e213]:
+          - generic [ref=e214]:
+            - heading "Company" [level=4] [ref=e215]
+            - list [ref=e216]:
+              - listitem [ref=e217]:
+                - link "Blog" [ref=e218] [cursor=pointer]:
+                  - /url: /blog
+              - listitem [ref=e219]:
+                - link "Guides" [ref=e220] [cursor=pointer]:
+                  - /url: /guides
+              - listitem [ref=e221]:
+                - link "Privacy" [ref=e222] [cursor=pointer]:
+                  - /url: /privacy-policy
+              - listitem [ref=e223]:
+                - link "Terms" [ref=e224] [cursor=pointer]:
+                  - /url: /terms-of-service
+              - listitem [ref=e225]:
+                - link "Contact" [ref=e226] [cursor=pointer]:
+                  - /url: /contact
+          - generic [ref=e227]:
+            - heading "Services" [level=4] [ref=e228]
+            - list [ref=e229]:
+              - listitem [ref=e230]:
+                - link "Création OF" [ref=e231] [cursor=pointer]:
+                  - /url: /services/creation-organisme-formation
+              - listitem [ref=e232]:
+                - link "Accès EDOF / CPF" [ref=e233] [cursor=pointer]:
+                  - /url: /services/acces-edof-cpf
+              - listitem [ref=e234]:
+                - link "Certification RNCP / RS" [ref=e235] [cursor=pointer]:
+                  - /url: /services/certification-rncp-rs
+              - listitem [ref=e236]:
+                - link "Génération de Leads" [ref=e237] [cursor=pointer]:
+                  - /url: /services/generation-leads
+              - listitem [ref=e238]:
+                - link "Marketing & Croissance" [ref=e239] [cursor=pointer]:
+                  - /url: /services/marketing-croissance
+              - listitem [ref=e240]:
+                - link "Accompagnement" [ref=e241] [cursor=pointer]:
+                  - /url: /services/accompagnement
+          - generic [ref=e242]:
+            - heading "Ressources" [level=4] [ref=e243]
+            - list [ref=e244]:
+              - listitem [ref=e245]:
+                - link "FAQ Qualiopi" [ref=e246] [cursor=pointer]:
+                  - /url: /faq-qualiopi
+              - listitem [ref=e247]:
+                - link "Blog" [ref=e248] [cursor=pointer]:
+                  - /url: /blog
+              - listitem [ref=e249]:
+                - link "Resources" [ref=e250] [cursor=pointer]:
+                  - /url: /resources
+              - listitem [ref=e251]:
+                - link "Contact" [ref=e252] [cursor=pointer]:
+                  - /url: /contact
+      - generic [ref=e253]:
+        - paragraph [ref=e254]: © 2026 Courage Formation. Tous droits réservés.
+        - generic [ref=e255]:
+          - link "Politique de confidentialité" [ref=e256] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Conditions d'utilisation" [ref=e257] [cursor=pointer]:
+            - /url: /terms-of-service

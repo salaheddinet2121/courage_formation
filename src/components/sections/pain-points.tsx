@@ -3,6 +3,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { RefreshCw, Coins, HelpCircle } from 'lucide-react';
+import SectionHeader from '@/components/elements/section-header';
 
 const painPoints = [
   {
@@ -34,15 +35,19 @@ const painPoints = [
 const PainPoints = () => {
   return (
     <section className="section-padding container space-y-12">
-      <motion.h2
-        className="text-3xl font-bold md:text-4xl lg:text-5xl max-w-lg"
+      <motion.div
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       >
-        Pourquoi tant d&apos;organismes de formation stagnent&nbsp;?
-      </motion.h2>
+        <SectionHeader
+          category="Problèmes"
+          icon={null}
+          title="Pourquoi tant d'organismes de formation stagnent ?"
+          description="Les obstacles les plus fréquents que nous aidons à surmonter."
+        />
+      </motion.div>
 
       <motion.div
         className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
@@ -59,11 +64,11 @@ const PainPoints = () => {
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
           >
             <div className="space-y-2">
-              <p className={`text-sm font-semibold ${point.labelColor}`}>
+              <p className={`text-sm font-medium ${point.labelColor}`}>
                 {point.label}
               </p>
               <p className="text-sm leading-6 text-foreground">
-                {point.intro && <span className="font-semibold">{point.intro}</span>}
+                {point.intro && <span className="font-medium">{point.intro}</span>}
                 {point.body}
               </p>
             </div>

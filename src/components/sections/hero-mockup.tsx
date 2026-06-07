@@ -19,7 +19,15 @@ const HeroMockup = () => {
       className="w-full max-w-2xl mx-auto px-4 mt-6 mb-10"
     >
       <a
-        href="/resources"
+        href="/checkbook_qualiopi_courage.pdf"
+        download="checkbook_qualiopi_courage.pdf"
+        onClick={(e) => {
+          e.preventDefault();
+          const a = document.createElement('a');
+          a.href = '/checkbook_qualiopi_courage.pdf';
+          a.download = 'checkbook_qualiopi_courage.pdf';
+          a.click();
+        }}
         className="group block rounded-2xl border border-border overflow-hidden"
         style={{ backgroundColor: '#fafafa' }}
       >
@@ -59,7 +67,7 @@ const HeroMockup = () => {
         <div className="flex items-center justify-between gap-4 px-7 py-4 border-t border-border bg-background">
           <div className="flex items-center gap-2 text-xs text-muted-foreground whitespace-nowrap flex-wrap">
             <span className="rounded-md border border-border px-2 py-0.5 font-medium text-foreground text-[11px] shrink-0">PDF</span>
-            <span className="shrink-0">12 pages</span>
+            <span className="shrink-0">25 pages</span>
             <span className="text-border shrink-0">·</span>
             <span className="shrink-0">Sans inscription</span>
           </div>

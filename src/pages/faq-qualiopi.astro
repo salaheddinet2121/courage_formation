@@ -1,0 +1,299 @@
+---
+import DefaultLayout from '@/layouts/DefaultLayout.astro';
+import { FaqQualiopi } from '@/components/sections/faq-qualiopi';
+
+const categories = [
+  {
+    id: 'comprendre',
+    title: 'Comprendre Qualiopi',
+    faqs: [
+      {
+        q: 'Quelle est la définition de Qualiopi ?',
+        a: `Qualiopi est une certification qualité créée le 5 septembre 2018 par la <strong>loi « Pour la Liberté de Choisir Son Avenir Professionnel »</strong>. Elle certifie la qualité des processus mis en œuvre par les prestataires d'actions concourant au développement des compétences.<br/><br/>
+La certification est délivrée par un organisme certificateur accrédité par le <a href="https://www.cofrac.fr/" target="_blank" rel="noopener" class="text-accent underline underline-offset-2 hover:text-accent/80">COFRAC</a> (Comité Français d'Accréditation).<br/><br/>
+<a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037367660/" target="_blank" rel="noopener" class="text-accent underline underline-offset-2 hover:text-accent/80">Consulter la loi sur Légifrance →</a>`,
+      },
+      {
+        q: 'À quoi sert la certification Qualiopi ?',
+        a: `Qualiopi sert à démontrer la qualité des formations proposées par un organisme. Elle permet de :<br/><br/>
+<ul class="list-disc pl-5 space-y-1.5">
+  <li>Rassurer vos clients sur votre capacité à délivrer des prestations de qualité</li>
+  <li>Permettre à vos clients de mobiliser des financements publics ou mutualisés</li>
+  <li>Vous différencier dans les appels d'offres et attirer de nouveaux clients</li>
+  <li>Placer votre organisme sous démarche qualité continue</li>
+</ul>`,
+      },
+      {
+        q: 'La certification Qualiopi est-elle reconnue par l\'État ?',
+        a: `Oui. Qualiopi est une certification nationale créée par la loi et encadrée par le Ministère du Travail. Le site officiel de référence est celui du <a href="https://travail-emploi.gouv.fr/" target="_blank" rel="noopener" class="text-accent underline underline-offset-2 hover:text-accent/80">Ministère du Travail (travail-emploi.gouv.fr)</a>.`,
+      },
+      {
+        q: 'Quel est le rôle du COFRAC pour Qualiopi ?',
+        a: `Le COFRAC (Comité Français d'Accréditation) est l'organisme qui autorise les certificateurs à délivrer la certification Qualiopi sous contrôle de l'État. Seuls les organismes certificateurs accrédités par le COFRAC peuvent délivrer des certificats Qualiopi valides.<br/><br/>
+<a href="https://www.cofrac.fr/" target="_blank" rel="noopener" class="text-accent underline underline-offset-2 hover:text-accent/80">Consulter la liste des accréditations sur cofrac.fr →</a>`,
+      },
+      {
+        q: 'Où trouver le Référentiel National Qualité (Qualiopi) en PDF ?',
+        a: `Le Référentiel National Qualité est disponible gratuitement sur le site du Ministère du Travail.<br/><br/>
+<a href="https://travail-emploi.gouv.fr/IMG/pdf/guide_de_lecture_qualiopi_v9_du_8_janvier_2024-2.pdf" target="_blank" rel="noopener" class="text-accent underline underline-offset-2 hover:text-accent/80">Télécharger le référentiel Qualiopi (PDF officiel) →</a>`,
+      },
+    ],
+  },
+  {
+    id: 'eligibilite',
+    title: 'Éligibilité & Obligation',
+    faqs: [
+      {
+        q: 'La certification Qualiopi est-elle obligatoire ?',
+        a: `Non, Qualiopi n'est pas obligatoire pour créer ou faire fonctionner un organisme de formation. En revanche, elle devient <strong>indispensable si vous souhaitez que vos stagiaires ou clients puissent faire financer leurs actions avec des fonds publics ou mutualisés</strong> (OPCO, France Travail, Caisse des Dépôts / CPF, Conseil Régional).<br/><br/>
+Sans Qualiopi, votre organisme peut opérer mais ne pourra pas accéder aux financements publics.`,
+      },
+      {
+        q: 'Qui est concerné par Qualiopi ?',
+        a: `Quatre catégories de prestataires sont concernées :<br/><br/>
+<ul class="list-disc pl-5 space-y-1.5">
+  <li><strong>Organismes de formation (OF)</strong></li>
+  <li><strong>Centres de bilan de compétences (CBC)</strong></li>
+  <li><strong>Centres de formation d'apprentis (CFA)</strong></li>
+  <li><strong>Prestataires de validation des acquis de l'expérience (VAE)</strong></li>
+</ul><br/>
+La certification s'applique à partir du moment où vous souhaitez accéder aux financements publics ou mutualisés.`,
+      },
+      {
+        q: 'Peut-on être certifié Qualiopi en tant qu\'indépendant ?',
+        a: `Oui. Il n'y a aucune condition de chiffre d'affaires minimum ni de nombre de salariés. Il suffit de disposer d'un <strong>Numéro de Déclaration d'Activité (NDA)</strong>. La majorité des organismes certifiés Qualiopi sont des consultants-formateurs indépendants.`,
+      },
+      {
+        q: 'Les sous-traitants ont-ils l\'obligation de se certifier Qualiopi ?',
+        a: `Oui, selon plusieurs conditions définies par le <strong>Décret n°2023-1350 du 28 décembre 2023</strong> relatif aux actions éligibles au Compte Personnel de Formation (CPF). Si votre activité de sous-traitance concerne des actions CPF, la certification Qualiopi est requise.<br/><br/>
+<a href="https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037367660/" target="_blank" rel="noopener" class="text-accent underline underline-offset-2 hover:text-accent/80">Consulter les textes réglementaires sur Légifrance →</a>`,
+      },
+      {
+        q: 'Un organisme nouvellement créé peut-il prétendre à Qualiopi ?',
+        a: `Oui. Il n'existe pas de durée d'activité minimale requise pour candidater à Qualiopi. Un organisme nouvellement créé peut entamer la démarche de certification dès l'obtention de son NDA et la signature de ses premiers contrats de formation.`,
+      },
+    ],
+  },
+  {
+    id: 'nda',
+    title: 'NDA & Déclaration d\'Activité',
+    faqs: [
+      {
+        q: 'Qu\'est-ce que le Numéro de Déclaration d\'Activité (NDA) ?',
+        a: `Le NDA est un identifiant à 11 chiffres qui désigne de manière unique les organismes dispensant des actions de formation professionnelle. Il permet à votre organisme de :<br/><br/>
+<ul class="list-disc pl-5 space-y-1.5">
+  <li>Figurer sur la liste publique des organismes de formation du Ministère du Travail</li>
+  <li>Justifier que vous remplissez les conditions légales pour dispenser de la formation professionnelle</li>
+</ul>`,
+      },
+      {
+        q: 'Comment obtenir un Numéro de Déclaration d\'Activité ?',
+        a: `La déclaration d'activité doit être déposée auprès de la <strong>DREETS (Direction Régionale de l'Économie, de l'Emploi, du Travail et des Solidarités)</strong> de votre région.<br/><br/>
+La demande doit être effectuée <strong>dans les 3 mois suivant la conclusion du premier contrat</strong> entre le prestataire et son client.<br/><br/>
+<a href="https://travail-emploi.gouv.fr/" target="_blank" rel="noopener" class="text-accent underline underline-offset-2 hover:text-accent/80">Plus d'informations sur travail-emploi.gouv.fr →</a>`,
+      },
+      {
+        q: 'Le NDA est-il obligatoire pour démarrer la démarche Qualiopi ?',
+        a: `Non. Le NDA n'est pas requis pour initier votre dossier de certification ni pour réaliser l'audit initial. Il ne sera demandé qu'au moment de l'émission du certificat Qualiopi.`,
+      },
+    ],
+  },
+  {
+    id: 'processus',
+    title: 'Processus de Certification',
+    faqs: [
+      {
+        q: 'Comment obtenir la certification Qualiopi ?',
+        a: `Le processus de certification Qualiopi se déroule en plusieurs étapes :<br/><br/>
+<ol class="list-decimal pl-5 space-y-2">
+  <li><strong>Identification & inscription</strong> — Déposez votre demande auprès d'un organisme certificateur accrédité</li>
+  <li><strong>Proposition</strong> — Obtenez une offre précisant la date d'audit, la durée et le budget</li>
+  <li><strong>Contractualisation</strong> — Acceptez la proposition, signez le contrat et réglez en ligne</li>
+  <li><strong>Préparation</strong> — Préparez votre dossier selon le plan d'audit et le référentiel Qualiopi</li>
+  <li><strong>Audit</strong> — Démontrez votre conformité aux indicateurs du Référentiel National Qualité</li>
+  <li><strong>Décision & certification</strong> — Recevez votre certificat et soyez référencé auprès du Ministère du Travail</li>
+  <li><strong>Suivi</strong> — Réalisez les audits de surveillance et de renouvellement pour maintenir la certification</li>
+</ol>`,
+      },
+      {
+        q: 'Quels sont les délais pour obtenir la certification Qualiopi ?',
+        a: `Les délais varient selon les étapes :<br/><br/>
+<ul class="list-disc pl-5 space-y-1.5">
+  <li><strong>Proposition & contrat :</strong> dès 15 minutes ouvrées</li>
+  <li><strong>Préparation de l'audit :</strong> entre 1 semaine et 3 mois selon votre avancement</li>
+  <li><strong>Traitement des non-conformités :</strong> environ 15 jours en moyenne (6 mois maximum)</li>
+  <li><strong>Émission du certificat :</strong> environ 10 jours ouvrés après avis favorable de l'audit</li>
+</ul>`,
+      },
+      {
+        q: 'Quels sont les critères audités pour obtenir Qualiopi ?',
+        a: `Le référentiel Qualiopi comprend <strong>7 critères</strong> déclinés en <strong>32 indicateurs</strong> :<br/><br/>
+<ol class="list-decimal pl-5 space-y-2">
+  <li>Conditions d'information du public sur les prestations proposées, les délais et les résultats obtenus</li>
+  <li>Identification précise des objectifs des prestations et adaptation aux bénéficiaires</li>
+  <li>Adaptation des prestations et des méthodes d'accueil, de suivi et d'évaluation aux bénéficiaires</li>
+  <li>Adéquation des moyens pédagogiques, techniques et d'encadrement aux prestations</li>
+  <li>Qualification et développement des compétences des personnels chargés des prestations</li>
+  <li>Inscription du prestataire dans son environnement socio-économique</li>
+  <li>Recueil et prise en compte des appréciations et réclamations des parties prenantes</li>
+</ol><br/>
+<a href="https://travail-emploi.gouv.fr/IMG/pdf/guide_de_lecture_qualiopi_v9_du_8_janvier_2024-2.pdf" target="_blank" rel="noopener" class="text-accent underline underline-offset-2 hover:text-accent/80">Télécharger le guide de lecture du référentiel (PDF officiel) →</a>`,
+      },
+      {
+        q: 'Faut-il fournir un Bilan Pédagogique et Financier (BPF) ?',
+        a: `Oui, le BPF est nécessaire pour établir une proposition d'audit. Il permet de valider les modalités et la durée de l'audit, car la tarification est réglementée et dépend du chiffre d'affaires de l'organisme, du nombre de sites et d'autres critères. Le BPF permet de calculer le coût personnalisé de votre certification.`,
+      },
+      {
+        q: 'Comment se déroule un audit Qualiopi ?',
+        a: `L'audit se déroule conformément au plan d'audit transmis en amont. L'auditeur vérifie votre conformité à chacun des indicateurs du Référentiel National Qualité dans le temps imparti. Vous devez être en mesure de présenter les preuves documentaires correspondant aux indicateurs audités.<br/><br/>
+La durée de l'audit est déterminée selon votre chiffre d'affaires, le nombre de sites et les catégories d'actions couvertes.`,
+      },
+    ],
+  },
+  {
+    id: 'non-conformites',
+    title: 'Non-Conformités & Refus',
+    faqs: [
+      {
+        q: 'Quelle est la différence entre une non-conformité mineure et majeure ?',
+        a: `<ul class="list-disc pl-5 space-y-2">
+  <li><strong>Non-conformité mineure :</strong> ne bloque pas l'émission du certificat mais nécessite un plan d'action correctif</li>
+  <li><strong>Non-conformité majeure :</strong> bloque l'émission du certificat et doit être levée après l'audit par des éléments de preuve documentés</li>
+</ul><br/>
+Dans les deux cas, l'organisme dispose d'un délai de 1 à 6 mois pour traiter les non-conformités identifiées. Il n'y a pas d'échec automatique.`,
+      },
+      {
+        q: 'Que se passe-t-il en cas de non-conformités lors de l\'audit ?',
+        a: `Si des non-conformités sont constatées, l'organisme dispose d'un délai pour les corriger :<br/><br/>
+<ul class="list-disc pl-5 space-y-1.5">
+  <li>Les <strong>non-conformités mineures</strong> donnent lieu à un plan d'action, sans blocage du certificat</li>
+  <li>Les <strong>non-conformités majeures</strong> bloquent l'émission du certificat jusqu'à présentation des preuves de correction</li>
+  <li>Si plus de cinq non-conformités majeures sont relevées, un audit complémentaire peut être proposé</li>
+</ul>`,
+      },
+      {
+        q: 'Que se passe-t-il en cas de refus de certification ?',
+        a: `Le refus définitif n'intervient qu'après épuisement du délai maximum de traitement des non-conformités : <strong>3 mois pour un audit initial</strong> (6 mois pour un audit de surveillance, renouvelable une fois).<br/><br/>
+En cas de refus définitif, l'organisme peut déposer une nouvelle demande de certification après un délai de 3 mois. En pratique, les refus définitifs restent rares — la plupart des cas correspondent à un abandon volontaire de la démarche.`,
+      },
+    ],
+  },
+  {
+    id: 'cout',
+    title: 'Coût & Financement',
+    faqs: [
+      {
+        q: 'Combien coûte la certification Qualiopi ?',
+        a: `Le budget de la certification Qualiopi se décompose en deux parties :<br/><br/>
+<strong>Lors de l'audit initial (une seule fois) :</strong><br/>
+Budget moyen d'environ <strong>1 200€ HT</strong>, comprenant :<br/>
+<ul class="list-disc pl-5 space-y-1 mt-2">
+  <li>Frais d'audit initial : à partir de 995€ HT</li>
+  <li>Frais techniques (émission certificat + service client) : 195€ HT</li>
+</ul><br/>
+Des prestations optionnelles (pré-audit, accompagnement à la préparation) peuvent porter l'enveloppe totale à environ 1 600€ HT.<br/><br/>
+<strong>Après certification (chaque année) :</strong><br/>
+Une redevance annuelle d'environ <strong>523€ HT par an</strong> couvre les audits de surveillance et de renouvellement dans le cadre du cycle de certification.<br/><br/>
+<em>La tarification de l'audit est réglementée et varie selon le chiffre d'affaires de l'organisme et le nombre de sites.</em>`,
+      },
+      {
+        q: 'Peut-on financer la certification Qualiopi ?',
+        a: `Le coût de l'audit lui-même n'est pas éligible aux financements publics. En revanche, certains certificateurs proposent des facilités de paiement (en 1 ou 3 fois sans frais) par carte bancaire, virement ou chèque.<br/><br/>
+Pour la préparation à l'audit (accompagnement, formation), certains coûts peuvent être pris en charge par votre OPCO. Renseignez-vous auprès de votre OPCO de rattachement.`,
+      },
+      {
+        q: 'Quelle est la durée de validité de la certification Qualiopi ?',
+        a: `La certification Qualiopi est valable <strong>3 ans</strong> et est renouvelable. Un audit de surveillance obligatoire est réalisé à mi-parcours (environ 18 mois après l'audit initial).<br/><br/>
+<em>Note : les certificats émis avant le 31 décembre 2020 étaient valables 4 ans.</em>`,
+      },
+      {
+        q: 'L\'audit de surveillance est-il obligatoire ?',
+        a: `Oui. L'audit de surveillance est une étape obligatoire dans le cycle de certification. Il permet à l'organisme de maintenir et de démontrer sa conformité continue au référentiel Qualiopi entre deux audits de renouvellement.`,
+      },
+    ],
+  },
+  {
+    id: 'cpf-edof',
+    title: 'CPF, EDOF & Financements',
+    faqs: [
+      {
+        q: 'Comment accéder au CPF avec la certification Qualiopi ?',
+        a: `Pour rendre vos formations éligibles au CPF, votre organisme doit :<br/><br/>
+<ol class="list-decimal pl-5 space-y-2">
+  <li>Obtenir la certification Qualiopi</li>
+  <li>Disposer d'un NDA (Numéro de Déclaration d'Activité)</li>
+  <li>Ne pas avoir de condamnation pénale</li>
+  <li>S'inscrire sur la plateforme <strong>EDOF (Espace Dédié aux Organismes de Formation)</strong> de la Caisse des Dépôts</li>
+  <li>Renseigner vos formations pour qu'elles soient visibles sur Mon Compte Formation</li>
+</ol><br/>
+<a href="https://www.moncompteformation.gouv.fr/" target="_blank" rel="noopener" class="text-accent underline underline-offset-2 hover:text-accent/80">Accéder à Mon Compte Formation →</a>`,
+      },
+      {
+        q: 'Est-il possible d\'accéder à EDOF uniquement avec Qualiopi ?',
+        a: `Oui, l'accès à la plateforme EDOF et aux financements CPF est possible avec la seule certification Qualiopi, à condition que l'organisme soit certifié sur la catégorie <strong>Bilan de compétences</strong> et/ou <strong>VAE</strong>.`,
+      },
+      {
+        q: 'Qualiopi est-elle suffisante pour que les stagiaires financent ma formation via le CPF ?',
+        a: `Qualiopi est une condition nécessaire mais pas suffisante à elle seule. Il faut également :<br/><br/>
+<ul class="list-disc pl-5 space-y-1.5">
+  <li>Que la formation soit enregistrée sur la plateforme EDOF</li>
+  <li>Qu'elle corresponde à une action de formation éligible (formation certifiante ou qualifiante selon les critères CPF)</li>
+  <li>Que les conditions réglementaires d'accès au financement CPF soient remplies</li>
+</ul>`,
+      },
+    ],
+  },
+  {
+    id: 'apres-certification',
+    title: 'Après la Certification',
+    faqs: [
+      {
+        q: 'Où télécharger le logo Qualiopi officiel ?',
+        a: `Le logo Qualiopi officiel est accessible depuis votre espace certifié, dans la section dédiée aux documents de communication.<br/><br/>
+Depuis votre tableau de bord :<br/>
+<ol class="list-decimal pl-5 space-y-1 mt-2">
+  <li>Sélectionnez « Voir le certificat »</li>
+  <li>Cliquez sur « Voir les documents de marque »</li>
+  <li>Ouvrez le dossier « Kit de communication »</li>
+  <li>Choisissez la version correspondant aux catégories couvertes par votre certificat</li>
+</ol>`,
+      },
+      {
+        q: 'Comment communiquer sur la certification Qualiopi ?',
+        a: `Une fois certifié, vous pouvez afficher le logo Qualiopi sur vos supports de communication (site web, documents commerciaux, signatures email) en respectant la charte graphique officielle. Vous devez préciser les catégories d'actions couvertes par votre certification.`,
+      },
+      {
+        q: 'Que faire en cas de changement de NDA, SIREN ou raison sociale ?',
+        a: `Tout changement administratif (adresse du siège social, NDA, SIREN, raison sociale) doit être signalé à votre organisme certificateur dans les meilleurs délais afin que le certificat soit mis à jour. Un certificat inexact peut engager votre responsabilité.`,
+      },
+    ],
+  },
+];
+
+function stripHtml(html: string): string {
+  return html.replace(/<[^>]+>/g, ' ').replace(/\s{2,}/g, ' ').trim();
+}
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: categories.flatMap((cat) =>
+    cat.faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: stripHtml(faq.a),
+      },
+    }))
+  ),
+};
+---
+
+<DefaultLayout
+  title="FAQ Qualiopi — Toutes les réponses à vos questions | Courage Formation"
+  description="Retrouvez toutes les réponses aux questions fréquentes sur la certification Qualiopi : définition, obligations, coût, délais, audit, CPF, EDOF et plus encore."
+  jsonLd={faqJsonLd}
+>
+  <FaqQualiopi categories={categories} client:load />
+</DefaultLayout>

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://courageformation.fr/sitemap-index.xml
+
+Disallow: /api/
+Disallow: /_astro/

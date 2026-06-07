@@ -4,7 +4,7 @@ description: 'Le guide complet pour préparer votre dossier Qualiopi, éviter le
 pubDate: '2025-04-15'
 author: 'Équipe Courage Formation'
 tags: ['qualiopi', 'certification', 'organisme de formation']
-coverImage: '/images/blog/blog-1.webp'
+coverImage: '/images/blog/post-1.webp?v=2'
 ---
 
 # Comment obtenir Qualiopi en moins de 3 mois ?

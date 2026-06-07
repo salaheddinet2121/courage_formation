@@ -10,6 +10,7 @@ import {
   TbClipboardListFilled,
   TbHeartFilled,
 } from 'react-icons/tb';
+import SectionHeader from '@/components/elements/section-header';
 
 const cards = [
   {
@@ -65,36 +66,24 @@ const ValueGrid = () => {
 
       {/* Header */}
       <motion.div
-        className="flex flex-col gap-4 max-w-lg"
-        initial="hidden"
-        whileInView="visible"
+        className="flex flex-col gap-6 max-w-lg"
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
-        transition={{ staggerChildren: 0.12 }}
+        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       >
-        <motion.h2
-          variants={fadeUp}
-          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="text-3xl font-bold leading-[1.15] md:text-4xl"
-        >
-          Une structure solide.<br />
-          Une croissance durable.
-        </motion.h2>
-        <motion.p
-          variants={fadeUp}
-          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="text-sm leading-7 text-foreground"
-        >
-          Courage Formation vous accompagne de la création de votre organisme jusqu&apos;au
-          développement commercial, avec une méthode claire, moderne et orientée résultats.
-        </motion.p>
-        <motion.a
-          variants={fadeUp}
-          transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+        <SectionHeader
+          category="Méthode"
+          icon={null}
+          title="Une structure solide. Une croissance durable."
+          description="Courage Formation vous accompagne de la création de votre organisme jusqu'au développement commercial, avec une méthode claire, moderne et orientée résultats."
+        />
+        <a
           href="/contact"
-          className="inline-flex w-fit items-center rounded-full bg-foreground px-6 py-2.5 text-sm font-semibold text-background hover:bg-foreground/85 transition-colors"
+          className="inline-flex w-fit items-center rounded-full bg-foreground px-6 py-2.5 text-sm font-medium text-background hover:bg-foreground/85 transition-colors"
         >
           Réserver un diagnostic
-        </motion.a>
+        </a>
       </motion.div>
 
       {/* Cards */}

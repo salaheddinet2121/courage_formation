@@ -3,13 +3,52 @@ import { getCollection } from 'astro:content';
 
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
+const homepageJsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Courage Formation',
+    url: 'https://courageformation.fr',
+    logo: 'https://courageformation.fr/layout/logo.webp',
+    description: SITE_DESCRIPTION,
+    email: 'contact@go.courageformation.fr',
+    areaServed: { '@type': 'Country', name: 'France' },
+    sameAs: [
+      'https://www.facebook.com/profile.php?id=61582292682722',
+      'https://www.linkedin.com/in/driss-rafiq-b99a3116a/',
+      'https://www.youtube.com/@CourageFormation',
+    ],
+    knowsAbout: [
+      'Certification Qualiopi',
+      'Formation professionnelle',
+      'Organisme de formation',
+      'CPF',
+      'OPCO',
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Courage Formation',
+    url: 'https://courageformation.fr',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: { '@type': 'EntryPoint', urlTemplate: 'https://courageformation.fr/blog?q={search_term_string}' },
+      'query-input': 'required name=search_term_string',
+    },
+  },
+];
+
 import Hero from '@/components/sections/hero';
 import HeroMockup from '@/components/sections/hero-mockup';
 import TestimonialBanner from '@/components/sections/testimonial-banner';
 import Features from '@/components/sections/features';
 import PainPoints from '@/components/sections/pain-points';
 import ValueGrid from '@/components/sections/value-grid';
+import Nous from '@/components/sections/nous';
+import CheckbookDownload from '@/components/sections/checkbook-download';
 import Pricing from '@/components/sections/pricing';
+import Testimonials from '@/components/sections/testimonials';
 import FAQ from '@/components/sections/faq';
 import BlogPosts from '@/components/sections/blog-posts';
 import DefaultLayout from '@/layouts/DefaultLayout.astro';
@@ -19,14 +58,17 @@ const posts = (await getCollection('blog'))
   .slice(0, 3);
 ---
 
-<DefaultLayout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+<DefaultLayout title={SITE_TITLE} description={SITE_DESCRIPTION} jsonLd={homepageJsonLd}>
   <Hero slot="hero" client:load />
   <HeroMockup client:load />
   <TestimonialBanner client:load />
   <Features client:load />
   <PainPoints client:load />
   <ValueGrid client:load />
+  <!-- <Nous client:load /> -->
+  <CheckbookDownload client:load />
   <Pricing client:load />
+  <Testimonials client:load />
   <FAQ client:load />
   <BlogPosts posts={posts} client:load />
 </DefaultLayout>
