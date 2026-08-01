@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "courageformation",
+  "compatibility_date": "2026-08-01",
+  // The site is fully static (no SSR adapter), so there is no Worker script to
+  // run — `assets` alone serves the built output straight from Cloudflare's edge.
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}
