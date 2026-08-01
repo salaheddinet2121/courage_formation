@@ -126,6 +126,7 @@ const Footer = () => {
             <a href="/mentions-legales" className="hover:text-foreground transition-colors">Mentions légales</a>
             <a href="/cgv" className="hover:text-foreground transition-colors">CGV</a>
             <a href="/privacy-policy" className="hover:text-foreground transition-colors">Politique de confidentialité</a>
+            <a href="/cookies" className="hover:text-foreground transition-colors">Cookies</a>
             <a href="/terms-of-service" className="hover:text-foreground transition-colors">Conditions d&apos;utilisation</a>
           </div>
         </div>
