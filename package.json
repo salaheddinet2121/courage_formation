@@ -2,6 +2,9 @@
   "name": "sonic-astro-template",
   "type": "module",
   "version": "2.0.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "author": "Shadcnblocks.com",
   "scripts": {
     "dev": "astro dev",
