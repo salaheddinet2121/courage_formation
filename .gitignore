@@ -2,7 +2,7 @@
 dist/
 # generated types
 .astro/
-
+emails/
 # dependencies
 node_modules/
 

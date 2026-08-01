@@ -5,6 +5,7 @@ import { Check, Minus } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import SectionHeader from '@/components/elements/section-header';
 import { PricingCards, plans } from './pricing-cards';
+import CertifierCostNote from './certifier-cost-note';
 
 type FeatureValue = boolean | string;
 
@@ -24,7 +25,7 @@ const featureGroups: { category: string; rows: { label: string; values: FeatureV
     rows: [
       { label: "Simulations d'audit blanc", values: [false, '3 audits', '3 audits'] },
       { label: 'Retours détaillés par expert', values: [false, true, true] },
-      { label: "Expert passe l'audit à votre place", values: [false, false, true] },
+      { label: "Expert présent le jour de l'audit", values: [false, false, true] },
       { label: 'Suivi post-certification', values: [false, false, true] },
       { label: 'Expert dédié personnel', values: [false, false, true] },
     ],
@@ -32,7 +33,6 @@ const featureGroups: { category: string; rows: { label: string; values: FeatureV
   {
     category: 'Garanties',
     rows: [
-      { label: 'Remboursement 50% si insatisfait', values: [true, false, false] },
       { label: 'Suivi 3 mois si refus audit', values: [false, true, false] },
       { label: 'Garantie 100% réussite ou remboursé', values: [false, false, true] },
     ],
@@ -67,8 +67,8 @@ function TableCell({ value, col }: { value: FeatureValue; col: number }) {
   );
 }
 
-const guaranteeLabels = [
-  '50% remboursé',
+const guaranteeLabels: (string | null)[] = [
+  null,
   'Suivi 3 mois',
   '100% réussite',
 ];
@@ -88,15 +88,16 @@ export default function PricingPage() {
             isCenter
             category="Tarifs"
             icon={null}
-            title="Des offres claires avec garantie"
-            description="Trois niveaux d'accompagnement. Toutes les offres incluent une garantie de résultats."
+            title="Des offres claires, sans surprise"
+            description="Trois niveaux d'accompagnement. Les offres accompagnées incluent une garantie de résultats."
           />
         </motion.div>
       </section>
 
       {/* ── Cards (same component as homepage) ── */}
-      <section className="container pb-20">
+      <section className="container pb-20 space-y-10">
         <PricingCards animate="mount" />
+        <CertifierCostNote />
       </section>
 
       {/* ── Comparison table ── */}
@@ -184,9 +185,13 @@ export default function PricingPage() {
                     key={plan.id}
                     className={cn('px-4 py-4 text-center', plan.highlighted && 'bg-accent/4')}
                   >
-                    <span className={cn('text-xs font-medium', plan.highlighted ? 'text-accent' : 'text-foreground/70')}>
-                      {guaranteeLabels[i]}
-                    </span>
+                    {guaranteeLabels[i] ? (
+                      <span className={cn('text-xs font-medium', plan.highlighted ? 'text-accent' : 'text-foreground/70')}>
+                        {guaranteeLabels[i]}
+                      </span>
+                    ) : (
+                      <span className="text-xs text-muted-foreground/60">—</span>
+                    )}
                   </td>
                 ))}
               </tr>

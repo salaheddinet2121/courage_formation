@@ -150,7 +150,7 @@ const breadcrumbJsonLd = {
                 ['Sessions live Q&R', false, '4 sessions', '4 sessions'],
                 ['Expert passe l\'audit', false, false, true],
                 ['Suivi post-certification', false, false, true],
-                ['Garantie', '50% remboursé', 'Suivi 3 mois', '100% réussite'],
+                ['Garantie', false, 'Suivi 3 mois', '100% réussite'],
               ].map((row) => (
                 <tr class="hover:bg-muted/20">
                   <td class="py-3 px-4 text-xs text-muted-foreground">{row[0]}</td>
@@ -174,7 +174,7 @@ const breadcrumbJsonLd = {
             { q: 'Comment se déroule un audit blanc ?', a: 'L\'expert joue le rôle de l\'auditeur Qualiopi. Il passe en revue vos indicateurs, vos documents et vos processus exactement comme lors d\'un vrai audit. Vous recevez ensuite un rapport écrit.' },
             { q: 'Les sessions live sont-elles enregistrées ?', a: 'Oui, toutes les sessions live Q&R sont enregistrées et disponibles en replay pour les membres du programme.' },
             { q: 'Que se passe-t-il si mon audit est refusé ?', a: 'Nous activons la garantie : vous bénéficiez d\'un accompagnement individuel gratuit pendant 3 mois pour préparer votre second passage.' },
-            { q: 'Puis-je passer à l\'Offre Garantie après ?', a: 'Oui, si vous souhaitez qu\'un expert passe l\'audit à votre place, vous pouvez upgrader vers l\'Offre Garantie. Contactez-nous pour les modalités.' },
+            { q: 'Puis-je passer à l\'offre Audit Serein après ?', a: 'Oui, si vous souhaitez qu\'un expert prépare votre dossier et vous accompagne le jour de l\'audit, vous pouvez upgrader vers l\'offre Audit Serein. Contactez-nous pour les modalités.' },
           ].map((item) => (
             <div class="px-7 py-6 space-y-2">
               <h3 class="font-semibold text-sm">{item.q}</h3>

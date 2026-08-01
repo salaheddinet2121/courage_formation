@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import SectionHeader from '@/components/elements/section-header';
 import { PricingCards } from './pricing-cards';
+import CertifierCostNote from './certifier-cost-note';
 
 export default function PricingSection() {
   return (
@@ -24,6 +25,8 @@ export default function PricingSection() {
       </motion.div>
 
       <PricingCards animate="scroll" />
+
+      <CertifierCostNote />
 
       <motion.div
         className="text-center"

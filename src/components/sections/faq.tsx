@@ -31,8 +31,12 @@ const faqData = [
     answer: "Oui, nous offrons un suivi complet post-création : aide au développement commercial, génération de leads, stratégie marketing, accompagnement aux audits de surveillance Qualiopi et mise en place de systèmes pour remplir vos sessions. Notre objectif est votre succès à long terme.",
   },
   {
+    question: "Le coût de l'audit du certificateur est-il inclus dans vos tarifs ?",
+    answer: "Non, et c'est important de le savoir avant de vous engager. Nos tarifs couvrent l'accompagnement Courage Formation. L'audit de certification est obligatoirement réalisé par un organisme certificateur accrédité et indépendant, que vous choisissez et payez directement : comptez en général entre 1 200 € et 1 800 € HT selon le certificateur et la taille de votre organisme. Nous ne percevons aucune commission sur ce montant. Nous vous aidons à choisir le certificateur le plus adapté et à budgéter l'ensemble dès le diagnostic.",
+  },
+  {
     question: "Quelles garanties offrez-vous sur vos offres ?",
-    answer: "Chaque offre inclut une garantie spécifique. L'offre E-Qualiopi propose un remboursement à 50% si vous n'êtes pas satisfait. L'offre Audits Blancs inclut un suivi de 3 mois en cas de refus d'audit. L'offre Je Passe Ton Audit garantit 100% de réussite ou remboursement intégral.",
+    answer: "L'offre Qualiopi + Audits Blancs inclut un suivi de 3 mois supplémentaires sans frais en cas de refus à l'audit. L'offre Audit Serein est garantie 100% réussite : si l'audit officiel est refusé, nous remboursons intégralement la prestation. L'offre E-Qualiopi, formation en autonomie, n'est pas assortie de garantie de résultat — vous en gardez l'accès et les mises à jour.",
   },
 ];
 

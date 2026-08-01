@@ -116,9 +116,7 @@ export default function Testimonials() {
       {/* Rating + logo strip */}
       <div className="flex flex-col items-center gap-8">
         <div className="flex items-center gap-2">
-          <StarRow size={18} />
-          <span className="font-bold text-foreground">4.9/5</span>
-          <span className="text-muted-foreground text-sm">· 25 audits Qualiopi réussis</span>
+          <span className="font-bold text-foreground">25 audits Qualiopi réussis</span>
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-5 w-full pb-6 border-b border-border">

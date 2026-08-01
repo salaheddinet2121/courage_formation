@@ -22,7 +22,7 @@ export const plans = [
       'Checklist 7 critères',
       'Accès groupe privé',
     ],
-    guarantee: 'GARANTIE : Remboursement si pas satisfait 50%',
+    guarantee: null as string | null,
   },
   {
     id: 'audits-blancs',
@@ -46,7 +46,7 @@ export const plans = [
   {
     id: 'offre-garantie',
     label: 'OFFRE 3',
-    name: 'Je Passe Ton Audit',
+    name: 'Audit Serein',
     originalPrice: '4 990€',
     discount: '-50%',
     price: '2 490€',
@@ -56,7 +56,7 @@ export const plans = [
     href: '/contact',
     features: [
       'Tout Audits Blancs',
-      "Je passe l'audit à ta place",
+      'Expert présent le jour de l\'audit',
       'Suivi post-certification',
       'Garantie 100% réussite',
       'ou argent remboursé',

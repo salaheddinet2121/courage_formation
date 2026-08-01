@@ -31,7 +31,7 @@ const Navbar = ({ currentPage }: { currentPage: string }) => {
 
   return (
     <header className="relative z-50 w-full px-4 pt-4 md:pt-6">
-      <div className="mx-auto max-w-5xl relative flex items-center justify-between gap-4 rounded-full border border-border px-5 py-3" style={{ backgroundColor: '#fafafa' }}>
+      <div className="mx-auto max-w-6xl relative flex items-center justify-between gap-3 rounded-full border border-border px-5 py-3" style={{ backgroundColor: '#fafafa' }}>
 
         {/* Mobile hamburger — left */}
         <button
@@ -50,7 +50,7 @@ const Navbar = ({ currentPage }: { currentPage: string }) => {
 
         {/* Desktop nav — centered */}
         <nav className="hidden md:block">
-          <ul className="flex items-center gap-5 text-sm text-muted-foreground whitespace-nowrap">
+          <ul className="flex items-center gap-3 text-sm text-muted-foreground whitespace-nowrap">
             {ITEMS.map((item) => (
               <li key={item.label}>
                 <a

@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dig +short 2msantilles.fr NS)",
+      "Bash(dig +short 2msantilles.fr A)",
+      "Bash(dig +short 2msantilles.fr SOA)",
+      "Bash(dig +short 2msantilles.com NS)",
+      "Bash(dig +short 2msantilles.com A)",
+      "Bash(whois 72.61.205.2)",
+      "Bash(curl -sI -m 12 http://2msantilles.fr)",
+      "Bash(curl -skI -m 12 https://2msantilles.fr)",
+      "Bash(python3 -c \"import yaml,sys; yaml.safe_load\\(open\\('.github/workflows/deploy.yml'\\)\\); print\\('deploy.yml: YAML valide'\\)\")",
+      "Bash(python3 -c \"import yaml; yaml.safe_load\\(open\\('/tmp/claude-1000/-home-salah-Desktop-Work-courage-formtion/3774fff4-edcf-495e-a6c1-a08113ecdc4a/scratchpad/deploy-static.yml'\\)\\); print\\('deploy-static.yml: YAML valide'\\)\")"
+    ]
+  }
+}

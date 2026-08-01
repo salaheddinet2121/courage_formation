@@ -40,7 +40,7 @@ const valeurs = [
 const points = [
   'Expert en création et développement d\'organismes de formation professionnelle.',
   'Plus de 5 ans d\'expérience en certification Qualiopi, accès CPF et RNCP.',
-  'A accompagné plus de 200 organismes de formation à travers la France.',
+  'A accompagné 25 organismes de formation à travers la France.',
 ];
 
 const socials = [
@@ -184,10 +184,10 @@ export default function AboutContent() {
           {/* Avatar + name */}
           <div className="flex items-center gap-3 mb-5">
             <div className="size-12 rounded-full bg-secondary flex items-center justify-center shrink-0 text-sm font-bold text-accent border border-border">
-              IR
+              DR
             </div>
             <div>
-              <p className="font-semibold text-sm">Idriss Rafqi</p>
+              <p className="font-semibold text-sm">Driss Rafiq</p>
               <p className="text-xs text-muted-foreground">Fondateur &amp; Directeur</p>
             </div>
           </div>

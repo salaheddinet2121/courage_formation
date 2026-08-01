@@ -13,7 +13,7 @@ const stats = [
 ];
 
 const points = [
-  'Nous avons accompagné plus de 200 organismes de formation à se structurer, se certifier et se développer.',
+  'Nous avons accompagné 25 organismes de formation à se structurer, se certifier et se développer.',
   'Notre équipe connaît chaque exigence DREETS, chaque critère Qualiopi et chaque rouage du financement CPF.',
   'Pas de prestataire généraliste : nous sommes spécialisés exclusivement dans la création et la croissance des organismes de formation.',
 ];
