@@ -1,16 +1,23 @@
 'use client';
 
 import { motion } from 'motion/react';
-import { Download, FileCheck, CheckCircle2 } from 'lucide-react';
+import { Download } from 'lucide-react';
 
-const highlights = [
-  '25 pages de contenu structuré',
-  '7 critères Qualiopi détaillés',
-  '32 indicateurs expliqués',
-  'Cases à cocher pour chaque point',
-  'Conseils pratiques d\'auditeurs',
-  'Modèle prêt à l\'emploi',
+// Same order and counts as the "Navigation rapide" page of the PDF.
+const criteria = [
+  { name: 'Information au public', indicators: 3 },
+  { name: 'Objectifs et adaptation', indicators: 5 },
+  { name: 'Accueil, accompagnement, évaluation', indicators: 8 },
+  { name: 'Moyens pédagogiques et encadrement', indicators: 4 },
+  { name: 'Compétences des intervenants', indicators: 2 },
+  { name: 'Veille, handicap et environnement', indicators: 7 },
+  { name: 'Amélioration continue', indicators: 3 },
 ];
+
+const PAGE_WIDTH = 910;
+const PAGE_HEIGHT = 1287;
+const pageClass =
+  'absolute w-[58%] max-w-[360px] rounded-[3px] bg-white shadow-[0_8px_30px_hsl(263_70%_50%/0.14),0_1px_2px_hsl(263_70%_50%/0.12)] md:w-[62%]';
 
 export default function CheckbookDownload() {
   return (
@@ -20,113 +27,83 @@ export default function CheckbookDownload() {
         style={{ backgroundColor: '#fafafa' }}
         initial={{ opacity: 0, y: 32 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       >
-        <div className="grid grid-cols-1 gap-10 p-8 md:grid-cols-2 md:p-12 lg:p-16">
-
-          {/* Left — text */}
-          <div className="flex flex-col justify-center gap-6">
-            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-border bg-background px-3 py-1.5 text-xs font-medium text-muted-foreground">
-              <FileCheck className="size-3.5 text-accent" />
-              Ressource gratuite
-            </div>
-
+        <div className="grid grid-cols-1 md:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)]">
+          <div className="flex flex-col gap-6 p-8 md:p-12 lg:p-16 lg:pr-8">
             <div className="space-y-3">
+              <span className="inline-block rounded-full border border-secondary bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground">
+                Ressource gratuite
+              </span>
               <h2 className="text-3xl font-bold leading-tight tracking-tight md:text-4xl">
                 Checklist Qualiopi<br />
-                <span className="text-accent">25 pages offertes</span>
+                25 pages offertes
               </h2>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="max-w-lg leading-relaxed text-muted-foreground">
                 Le guide complet pour préparer votre audit Qualiopi sans surprise.
-                7 critères, 32 indicateurs, cases à cocher — tout ce que les auditeurs
-                cherchent, organisé pour vous.
+                7 critères, 32 indicateurs, cases à cocher&nbsp;: tout ce que les
+                auditeurs cherchent, organisé pour vous.
               </p>
             </div>
 
-            <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2">
-              {highlights.map((item, i) => (
-                <li key={i} className="flex items-center gap-2 text-sm">
-                  <CheckCircle2 className="size-4 shrink-0 text-accent" />
-                  <span>{item}</span>
+            <ol className="max-w-lg divide-y divide-border border-y border-border text-sm">
+              {criteria.map((criterion, i) => (
+                <li key={criterion.name} className="flex items-baseline gap-3 py-2">
+                  <span className="w-3 shrink-0 tabular-nums text-muted-foreground">{i + 1}</span>
+                  <span className="min-w-0 flex-1">{criterion.name}</span>
+                  <span className="shrink-0 whitespace-nowrap tabular-nums text-muted-foreground">
+                    {criterion.indicators} indicateurs
+                  </span>
                 </li>
               ))}
-            </ul>
+            </ol>
 
-            <a
-              href="/checkbook_qualiopi_courage.pdf"
-              download="checkbook_qualiopi_courage.pdf"
-              target="_self"
-              onClick={(e) => {
-                e.preventDefault();
-                const a = document.createElement('a');
-                a.href = '/checkbook_qualiopi_courage.pdf';
-                a.download = 'checkbook_qualiopi_courage.pdf';
-                a.click();
-              }}
-              className="inline-flex w-fit items-center gap-2.5 rounded-full bg-foreground px-7 py-3.5 text-sm font-semibold text-background transition-colors hover:bg-foreground/85 active:scale-[0.98]"
-            >
-              <Download className="size-4" />
-              Télécharger la checklist — gratuit
-            </a>
-
-            <p className="text-xs text-muted-foreground">
-              PDF · 25 pages · Aucune inscription requise
-            </p>
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
+              <a
+                href="/checkbook_qualiopi_courage.pdf"
+                download="checkbook_qualiopi_courage.pdf"
+                className="inline-flex w-fit items-center gap-2 rounded-full bg-foreground px-7 py-3 text-sm font-semibold text-background transition-colors hover:bg-foreground/85"
+              >
+                <Download className="size-4" />
+                Télécharger la checklist
+              </a>
+              <p className="text-xs text-muted-foreground">
+                PDF · 25 pages · Aucune inscription requise
+              </p>
+            </div>
           </div>
 
-          {/* Right — PDF mockup */}
-          <div className="flex items-center justify-center">
-            <motion.div
-              className="relative"
-              initial={{ opacity: 0, x: 24 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, amount: 0.3 }}
-              transition={{ duration: 0.6, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-              whileHover={{ y: -6, transition: { duration: 0.3 } }}
-            >
-              {/* Shadow stack effect */}
-              <div className="absolute -bottom-3 -right-3 h-full w-full rounded-2xl border border-border bg-white" />
-              <div className="absolute -bottom-1.5 -right-1.5 h-full w-full rounded-2xl border border-border bg-white" />
-
-              {/* Main card */}
-              <div className="relative z-10 w-56 rounded-2xl border border-border bg-white p-6 shadow-lg md:w-64">
-                {/* Header stripe */}
-                <div className="mb-5 h-2 w-full rounded-full bg-foreground" />
-
-                <div className="mb-4 flex items-center gap-3">
-                  <div className="flex size-10 items-center justify-center rounded-xl bg-foreground">
-                    <FileCheck className="size-5 text-background" />
-                  </div>
-                  <div>
-                    <p className="text-xs font-bold leading-tight">Checklist Qualiopi</p>
-                    <p className="text-[10px] text-muted-foreground">Courage Formation</p>
-                  </div>
-                </div>
-
-                {/* Fake lines */}
-                <div className="space-y-2.5">
-                  {[100, 80, 90, 70, 85, 60, 75].map((w, i) => (
-                    <div key={i} className="flex items-center gap-2">
-                      <div className="size-3 shrink-0 rounded-sm border-2 border-muted-foreground/30" />
-                      <div
-                        className="h-1.5 rounded-full bg-muted"
-                        style={{ width: `${w}%` }}
-                      />
-                    </div>
-                  ))}
-                </div>
-
-                <div className="mt-5 flex items-center justify-between">
-                  <span className="text-[10px] font-medium text-muted-foreground">25 pages</span>
-                  <span className="rounded-full bg-accent/10 px-2 py-0.5 text-[10px] font-bold text-accent">
-                    Gratuit
-                  </span>
-                </div>
-              </div>
-            </motion.div>
+          {/* Real pages from the PDF, laid out like paper on a desk and cropped by the panel. */}
+          <div className="relative h-[340px] sm:h-[420px] md:h-auto">
+            <img
+              src="/images/checklist/checklist-finale.webp"
+              alt=""
+              width={PAGE_WIDTH}
+              height={PAGE_HEIGHT}
+              loading="lazy"
+              decoding="async"
+              className={`${pageClass} left-[38%] top-20 rotate-[7deg] md:top-28`}
+            />
+            <img
+              src="/images/checklist/critere-1.webp"
+              alt=""
+              width={PAGE_WIDTH}
+              height={PAGE_HEIGHT}
+              loading="lazy"
+              decoding="async"
+              className={`${pageClass} left-[22%] top-10 rotate-[2deg] md:top-16`}
+            />
+            <img
+              src="/images/checklist/couverture.webp"
+              alt="Couverture de la checklist Qualiopi : préparer votre audit sans vous perdre dans le référentiel"
+              width={PAGE_WIDTH}
+              height={PAGE_HEIGHT}
+              loading="lazy"
+              decoding="async"
+              className={`${pageClass} left-[6%] top-6 -rotate-3 md:top-12`}
+            />
           </div>
-
         </div>
       </motion.div>
     </section>
